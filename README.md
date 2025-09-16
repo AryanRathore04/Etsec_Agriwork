@@ -20,6 +20,49 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## Migration Notes (Vite React -> Next.js App Router)
+
+This codebase was migrated from a standalone React (Vite) project. Key decisions:
+
+- Routing: React Router pages converted to App Router segments in `app/`.
+- Pages Migrated: Home, About, Products (catalog), Dynamic Product Detail (`products/[productId]`), Careers, Contact.
+- Dynamic Routes: Product detail validates IDs and calls `notFound()` for unknown identifiers.
+- UI Primitives: Common components (`button`, `badge`, `card`, etc.) live under `components/ui/` using Tailwind utility classes.
+- Images: A lightweight `ImageWithFallback` component is used; consider replacing with `next/image` for built-in optimization later.
+- Styling: Tailwind utilities (no large monolithic CSS carried over). Global styles in `app/globals.css`.
+- Lint Fixes: Apostrophes escaped (e.g. `It&apos;s`) to satisfy `react/no-unescaped-entities` rule.
+- Removed Dependency: `react-day-picker` (peer conflict with React 19 and unused in migrated code).
+
+### Adding a New Product
+
+1. Add product metadata to `components/ProductDetailPage.tsx` `productData` map (ensure the key matches URL slug).
+2. Add any catalog list entry if needed inside `components/ProductsPage.tsx` array.
+3. The route `/products/[productId]` will automatically work if the slug matches an existing key; otherwise it returns a 404 via `notFound()`.
+
+### Recommended Next Improvements
+
+- Replace `ImageWithFallback` usages with `next/image` for performance.
+- Centralize product data in a dedicated module (e.g. `lib/products.ts`) and share types.
+- Add unit tests for product slug validation.
+- Implement form handling (Contact page) via API route (`app/api/contact/route.ts`).
+
+### Development
+
+Run development server:
+
+```
+npm run dev
+```
+
+Then open http://localhost:3000.
+
+### Type & Lint
+
+```
+npm run lint
+npm run build
+```
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:

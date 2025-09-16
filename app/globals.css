@@ -1,26 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 @import "tailwindcss";
+
+/* Tailwind CSS custom font configuration */
+@layer base {
+  :root {
+    --font-family-sans: "Lexend Deca", ui-sans-serif, system-ui, sans-serif,
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+      "Noto Color Emoji";
+    --font-family-roboto: "Roboto", ui-sans-serif, system-ui, sans-serif,
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+      "Noto Color Emoji";
+
+    /* Font weights for both families */
+    --font-weight-thin: 100;
+    --font-weight-extralight: 200;
+    --font-weight-light: 300;
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    --font-weight-extrabold: 800;
+    --font-weight-black: 900;
+
+    /* Lexend Deca-optimized font sizes */
+    --font-size-xs: 0.75rem; /* 12px */
+    --font-size-sm: 0.875rem; /* 14px */
+    --font-size-base: 1rem; /* 16px */
+    --font-size-lg: 1.125rem; /* 18px */
+    --font-size-xl: 1.25rem; /* 20px */
+    --font-size-2xl: 1.5rem; /* 24px */
+    --font-size-3xl: 1.875rem; /* 30px */
+    --font-size-4xl: 2.25rem; /* 36px */
+    --font-size-5xl: 3rem; /* 48px */
+    --font-size-6xl: 3.75rem; /* 60px */
+    --font-size-7xl: 4.5rem; /* 72px */
+    --font-size-8xl: 6rem; /* 96px */
+    --font-size-9xl: 8rem; /* 128px */
+
+    /* Lexend Deca-optimized line heights */
+    --line-height-tight: 1.25;
+    --line-height-snug: 1.375;
+    --line-height-normal: 1.5;
+    --line-height-relaxed: 1.625;
+    --line-height-loose: 2;
+  }
+
+  html {
+    font-family: var(--font-family-sans);
+  }
+
+  body {
+    font-family: var(--font-family-sans);
+  }
+
+  /* Roboto font family class */
+  .font-roboto {
+    font-family: var(--font-family-roboto) !important;
+  }
+
+  /* Apply font weights with proper specificity */
+  .font-thin {
+    font-weight: var(--font-weight-thin) !important;
+  }
+  .font-extralight {
+    font-weight: var(--font-weight-extralight) !important;
+  }
+  .font-light {
+    font-weight: var(--font-weight-light) !important;
+  }
+  .font-normal {
+    font-weight: var(--font-weight-normal) !important;
+  }
+  .font-medium {
+    font-weight: var(--font-weight-medium) !important;
+  }
+  .font-semibold {
+    font-weight: var(--font-weight-semibold) !important;
+  }
+  .font-bold {
+    font-weight: var(--font-weight-bold) !important;
+  }
+  .font-extrabold {
+    font-weight: var(--font-weight-extrabold) !important;
+  }
+  .font-black {
+    font-weight: var(--font-weight-black) !important;
+  }
+
+  /* Apply Lexend Deca-optimized typography */
+  .text-xs {
+    font-size: var(--font-size-xs);
+  }
+  .text-sm {
+    font-size: var(--font-size-sm);
+  }
+  .text-base {
+    font-size: var(--font-size-base);
+  }
+  .text-lg {
+    font-size: var(--font-size-lg);
+  }
+  .text-xl {
+    font-size: var(--font-size-xl);
+  }
+  .text-2xl {
+    font-size: var(--font-size-2xl);
+  }
+  .text-3xl {
+    font-size: var(--font-size-3xl);
+  }
+  .text-4xl {
+    font-size: var(--font-size-4xl);
+  }
+  .text-5xl {
+    font-size: var(--font-size-5xl);
+  }
+  .text-6xl {
+    font-size: var(--font-size-6xl);
+  }
+  .text-7xl {
+    font-size: var(--font-size-7xl);
+  }
+  .text-8xl {
+    font-size: var(--font-size-8xl);
+  }
+  .text-9xl {
+    font-size: var(--font-size-9xl);
+  }
+
+  /* Optimized line heights for Lexend Deca */
+  .leading-tight {
+    line-height: var(--line-height-tight);
+  }
+  .leading-snug {
+    line-height: var(--line-height-snug);
+  }
+  .leading-normal {
+    line-height: var(--line-height-normal);
+  }
+  .leading-relaxed {
+    line-height: var(--line-height-relaxed);
+  }
+  .leading-loose {
+    line-height: var(--line-height-loose);
+  }
+}
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
 }
 
-@theme inline {
+/* Theme tokens */
+:root {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #ffffff;
+    --foreground: #171717;
   }
 }
 
 body {
-  background: var(--background);
+  background: #ffffff;
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-family-sans);
+}
+
+/* Subtle topographic background pattern */
+.bg-topography {
+  background-color: #ffffff;
+  background-image: radial-gradient(
+      circle at 20% 20%,
+      rgba(0, 0, 0, 0.03) 0,
+      transparent 60%
+    ),
+    radial-gradient(circle at 80% 40%, rgba(0, 0, 0, 0.025) 0, transparent 55%),
+    radial-gradient(circle at 40% 80%, rgba(0, 0, 0, 0.02) 0, transparent 60%);
+  background-repeat: no-repeat;
+  background-size: 1200px 1200px, 1000px 1000px, 1400px 1400px;
+}
+
+.fade-in-up {
+  animation: fade-in-up 0.8s ease forwards;
+  opacity: 0;
+}
+.fade-in-up-delayed {
+  animation: fade-in-up 0.8s ease 0.15s forwards;
+  opacity: 0;
+}
+.fade-in-up-more {
+  animation: fade-in-up 0.8s ease 0.3s forwards;
+  opacity: 0;
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
