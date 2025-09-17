@@ -2,17 +2,15 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
-import { Card, CardContent } from "@/components/ui/card";
-import { ArrowRight, Clock } from "lucide-react";
+// Removed unused UI imports to clear ESLint warnings
+import { ArrowRight } from "lucide-react";
 import { InteractiveHoverButton } from "@/components/ui/interactive-hover-button";
 
 export default function HomePage() {
   return (
     <div className="bg-white">
       <section
-        className="relative min-h-[65vh] sm:min-h-[75vh] md:h-[80vh] lg:h-[85vh] flex items-center overflow-hidden"
+        className="relative min-h-[55vh] sm:min-h-[65vh] md:min-h-[75vh] lg:min-h-[85vh] flex items-center overflow-hidden"
         style={{
           backgroundImage: "url('/topography/topography.svg')",
           backgroundRepeat: "repeat",
@@ -21,7 +19,7 @@ export default function HomePage() {
         }}
       >
         <div className="absolute  inset-0 bg-white/90 z-10"></div>
-        <div className="relative mt-12 z-[100] max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="relative mt-8 sm:mt-12 z-[100] max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mt-8 sm:mt-0">
             <div
               className="inline-flex items-center mb-4 sm:mb-3 rounded-full overflow-hidden text-xs sm:text-sm font-medium"
@@ -35,27 +33,25 @@ export default function HomePage() {
                 <ArrowRight className="h-3 w-3 sm:h-4 sm:w-4" />
               </span>
             </div>
-            <h1 className="fade-in-up text-4xl sm:text-4xl md:text-6xl lg:text-[90px] tracking-tight text-[#2B2B2B] mb-4 sm:mb-3 leading-tight sm:leading-[1.05] max-w-sm sm:max-w-3xl md:max-w-5xl mx-auto font-regular">
-              Eco-Friendly
-              <br className="block sm:hidden" /> Farming,{" "}
-              <br className="hidden sm:block md:block" />
-              Exceptional
-              <br className="block sm:hidden" />
-              <br className="hidden md:block lg:block" /> Harvests
+            <h1 className="fade-in-up text-3xl sm:text-4xl md:text-5xl lg:text-6xl tracking-tight text-[#2B2B2B] mb-3 sm:mb-3 leading-snug sm:leading-[1.05] max-w-[40ch] sm:max-w-3xl md:max-w-4xl mx-auto font-regular">
+              <span className="block sm:inline">Eco-Friendly Farming, </span>
+              <span className="block sm:inline sm:ml-2">
+                Exceptional Harvests
+              </span>
             </h1>
-            <p className="fade-in-up-delayed text-base sm:text-base md:text-xl lg:text-[27px] text-[#2B2B2B] mb-6 sm:mb-8 md:mb-10 max-w-md sm:max-w-xl md:max-w-2xl mx-auto leading-relaxed font-light px-2 sm:px-0">
+            <p className="fade-in-up-delayed text-base sm:text-lg md:text-xl lg:text-2xl text-[#2B2B2B] mb-5 sm:mb-7 md:mb-10 max-w-full sm:max-w-xl md:max-w-2xl mx-auto leading-relaxed font-light px-2 sm:px-0">
               Empowering Farmers with Technology, Expertise, and Eco-Friendly
               Practices.
             </p>
-            <div className="fade-in-up-more flex flex-col sm:flex-row gap-3 sm:gap-4 md:gap-5 justify-center items-center mb-6 sm:mb-8 md:mb-10 px-4 sm:px-0">
+            <div className="fade-in-up-more flex flex-col sm:flex-row gap-3 sm:gap-4 md:gap-5 justify-center items-center mb-5 sm:mb-7 md:mb-10 px-4 sm:px-0 w-full">
               <Link href="/products" className="flex justify-center sm:w-auto">
                 <InteractiveHoverButton
                   text="Explore Solutions"
-                  className="rounded-full bg-[#0B5C43] border-[#0B5C43] hover:bg-[#094D3A] text-white px-6 sm:px-6 h-11 sm:h-12 text-sm sm:text-sm min-w-[180px] sm:min-w-[200px] group"
+                  className="rounded-full bg-[#0B5C43] border-[#0B5C43] hover:bg-[#094D3A] text-white px-5 sm:px-6 h-11 sm:h-12 text-sm sm:text-base min-w-[150px] sm:min-w-[200px] w-full sm:w-auto group"
                 />
               </Link>
               <Link href="/contact" className="flex justify-center sm:w-auto">
-                <button className="group relative cursor-pointer overflow-hidden rounded-full border-2 border-gray-300 bg-white text-gray-800 transition-colors duration-300 min-w-[180px] sm:min-w-[220px] flex items-center gap-2 sm:gap-3 px-6 sm:px-6 h-11 sm:h-12 text-sm sm:text-sm font-medium">
+                <button className="group relative cursor-pointer overflow-hidden rounded-full border-2 border-gray-300 bg-white text-gray-800 transition-colors duration-300 min-w-[150px] sm:min-w-[220px] flex items-center gap-2 sm:gap-3 px-4 sm:px-6 h-11 sm:h-12 text-sm sm:text-sm font-medium w-full sm:w-auto">
                   {/* Expanding green background animation */}
                   <div
                     className="absolute left-2 top-1/2 -translate-y-1/2 z-0 h-2 w-2 scale-[1] rounded-full transition-all duration-300 group-hover:left-0 group-hover:top-0 group-hover:translate-y-0 group-hover:h-full group-hover:w-full group-hover:scale-[1.8]"
@@ -78,7 +74,7 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-      <section className="py-12 bg-white">
+      <section className="py-10 sm:py-12 bg-white overflow-hidden">
         <div className="w-full px-4 sm:px-6 lg:px-8">
           {/* Badge and Heading */}
           <div className="mb-8 text-center">
@@ -91,10 +87,10 @@ export default function HomePage() {
           </div>
 
           {/* Bento Grid Layout - Full Screen */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6 h-[70vh] max-h-[600px] min-h-[500px]">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6 min-h-[auto]">
             {/* Expert Support Card */}
             <div
-              className="md:col-span-1 lg:col-span-1 rounded-xl shadow-md p-6 flex flex-col justify-center items-center text-center"
+              className="md:col-span-1 lg:col-span-1 rounded-xl shadow-md p-6 flex flex-col justify-center items-center text-center w-full"
               style={{ backgroundColor: "#C1EB91" }}
             >
               <div className="flex flex-col items-center">
@@ -123,7 +119,7 @@ export default function HomePage() {
             </div>
 
             {/* Organic Focus Card */}
-            <div className="md:col-span-1 lg:col-span-1 bg-gray-100 rounded-xl shadow-md p-4 flex flex-col justify-center items-center text-center">
+            <div className="md:col-span-1 lg:col-span-1 bg-gray-100 rounded-xl shadow-md p-4 flex flex-col justify-center items-center text-center w-full">
               <div className="flex flex-col items-center">
                 <div className="flex items-center justify-center mb-4">
                   <Image
@@ -144,7 +140,7 @@ export default function HomePage() {
             </div>
 
             {/* Sustainable Practices Card (Wide on mobile, tall on desktop) */}
-            <div className="md:col-span-2 lg:col-span-2 lg:row-span-2 bg-green-800 rounded-xl shadow-md p-6 flex flex-col justify-center text-white">
+            <div className="md:col-span-2 lg:col-span-2 lg:row-span-2 bg-green-800 rounded-xl shadow-md p-6 flex flex-col justify-center text-white w-full">
               <div className="flex flex-col items-center text-center">
                 <div className="relative w-20 h-20 lg:w-24 lg:h-24 mb-4 lg:mb-6">
                   <Image
@@ -166,7 +162,7 @@ export default function HomePage() {
             </div>
 
             {/* Modern Agri-Tech Card */}
-            <div className="md:col-span-1 lg:col-span-1 bg-gray-100 rounded-xl shadow-md p-4 flex flex-col justify-center items-center text-center">
+            <div className="md:col-span-1 lg:col-span-1 bg-gray-100 rounded-xl shadow-md p-4 flex flex-col justify-center items-center text-center w-full">
               <div className="flex flex-col items-center">
                 <div className="flex items-center justify-center mb-4">
                   <Image
@@ -187,20 +183,21 @@ export default function HomePage() {
             </div>
 
             {/* Agricultural Excellence Image */}
-            <div className="md:col-span-1 lg:col-span-1 rounded-xl shadow-md overflow-hidden">
+            <div className="md:col-span-1 lg:col-span-1 rounded-xl shadow-md overflow-hidden w-full">
               <Image
                 src="/ladybug-leaf.jpg"
                 alt="Sustainable Agriculture Excellence"
-                width={400}
-                height={400}
-                className="w-full h-full object-cover"
+                width={800}
+                height={800}
+                className="w-full h-auto object-cover max-h-96 md:max-h-[400px]"
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
               />
             </div>
           </div>
         </div>
       </section>
       <section
-        className="relative py-20 overflow-hidden"
+        className="relative py-12 sm:py-16 md:py-20 overflow-hidden"
         style={{
           backgroundImage: "url('/topography/topography.svg')",
           backgroundRepeat: "repeat",
@@ -219,10 +216,10 @@ export default function HomePage() {
           </p>
         </div>
       </section>
-      <section className="py-20 bg-white">
+      <section className="py-12 sm:py-16 bg-white">
         <div className="w-full px-4 sm:px-6 lg:px-8">
           {/* Header */}
-          <div className="flex items-center justify-between mb-12">
+          <div className="flex flex-col md:flex-row items-start md:items-center justify-between mb-8 md:mb-12 gap-4 md:gap-0">
             <div>
               <div className="inline-block px-4 py-2 rounded-full bg-green-800 text-white text-sm font-medium mb-4">
                 Our Products
@@ -262,18 +259,19 @@ export default function HomePage() {
           {/* Products Horizontal Scroll */}
           <div
             id="products-container"
-            className="flex gap-6 overflow-x-auto scrollbar-hide pb-4 mb-8"
+            className="flex gap-6 overflow-x-auto pb-4 mb-8 touch-pan-x"
             style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
           >
             {/* Organic Seeds */}
-            <div className="flex-none w-80 relative rounded-2xl overflow-hidden group cursor-pointer h-[450px]">
+            <div className="flex-none w-72 sm:w-80 relative rounded-2xl overflow-hidden group cursor-pointer h-[380px] sm:h-[450px]">
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent z-10"></div>
               <Image
                 src="/ladybug-leaf.jpg"
                 alt="Organic Seeds"
-                width={320}
-                height={450}
+                width={640}
+                height={900}
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                sizes="(max-width: 640px) 100vw, 320px"
               />
               <div className="absolute bottom-6 left-6 right-6 z-20 text-white">
                 <div className="inline-block px-3 py-1 rounded-full bg-green-600 text-xs font-medium mb-2">
@@ -294,7 +292,7 @@ export default function HomePage() {
             </div>
 
             {/* Bio-Fertilizers */}
-            <div className="flex-none w-80 relative rounded-2xl overflow-hidden group cursor-pointer h-[450px]">
+            <div className="flex-none w-72 sm:w-80 relative rounded-2xl overflow-hidden group cursor-pointer h-[380px] sm:h-[450px]">
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent z-10"></div>
               <Image
                 src="/ladybug-leaf.jpg"
@@ -322,7 +320,7 @@ export default function HomePage() {
             </div>
 
             {/* Smart Irrigation Kits */}
-            <div className="flex-none w-80 relative rounded-2xl overflow-hidden group cursor-pointer h-[450px]">
+            <div className="flex-none w-72 sm:w-80 relative rounded-2xl overflow-hidden group cursor-pointer h-[380px] sm:h-[450px]">
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent z-10"></div>
               <Image
                 src="/ladybug-leaf.jpg"
@@ -352,7 +350,7 @@ export default function HomePage() {
             </div>
 
             {/* Pest Control Solutions */}
-            <div className="flex-none w-80 relative rounded-2xl overflow-hidden group cursor-pointer h-[450px]">
+            <div className="flex-none w-72 sm:w-80 relative rounded-2xl overflow-hidden group cursor-pointer h-[380px] sm:h-[450px]">
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent z-10"></div>
               <Image
                 src="/ladybug-leaf.jpg"
@@ -382,7 +380,7 @@ export default function HomePage() {
             </div>
 
             {/* Greenhouse Equipment */}
-            <div className="flex-none w-80 relative rounded-2xl overflow-hidden group cursor-pointer h-[450px]">
+            <div className="flex-none w-72 sm:w-80 relative rounded-2xl overflow-hidden group cursor-pointer h-[380px] sm:h-[450px]">
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent z-10"></div>
               <Image
                 src="/ladybug-leaf.jpg"
@@ -412,7 +410,7 @@ export default function HomePage() {
             </div>
 
             {/* Soil Testing Kits */}
-            <div className="flex-none w-80 relative rounded-2xl overflow-hidden group cursor-pointer h-[450px]">
+            <div className="flex-none w-72 sm:w-80 relative rounded-2xl overflow-hidden group cursor-pointer h-[380px] sm:h-[450px]">
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent z-10"></div>
               <Image
                 src="/ladybug-leaf.jpg"

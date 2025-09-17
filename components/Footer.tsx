@@ -8,14 +8,15 @@ export default function Footer() {
       <div className="w-full px-4 sm:px-6 lg:px-8">
         {/* Top Section */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-16">
-          {/* Sign up section */}
+          {/* Left info section */}
           <div className="lg:col-span-4">
             <h2 className="text-2xl font-bold text-gray-900 mb-4">
-              Sign up to The Wrap Up
+              About Agrivive
             </h2>
             <p className="text-gray-600 mb-6 leading-relaxed">
-              Your one-stop shop for the tech, business, and finance news you
-              need to know each week.
+              Agrivive partners with farmers to provide eco-friendly products,
+              expert guidance, and smart technology to improve yields and
+              sustainability.
             </p>
 
             {/* Social Media Icons */}
@@ -47,12 +48,16 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Quick Links */}
-          <div className="lg:col-span-2">
-            <h3 className="text-lg font-semibold text-gray-900 mb-6">
+          {/* Spacer so grid aligns correctly on lg */}
+          <div className="hidden lg:block lg:col-span-2" />
+
+          {/* Quick Links (moved to the right) */}
+          <div className="lg:col-span-2 lg:col-start-10 hidden lg:block">
+            <h3 className="text-lg font-semibold text-gray-900 mb-6 text-right">
               Quick link
             </h3>
-            <ul className="space-y-4">
+            {/* stacked list on all sizes; right-aligned on lg */}
+            <ul className="flex flex-col items-end space-y-4">
               <li>
                 <Link
                   href="/"
@@ -95,61 +100,55 @@ export default function Footer() {
               </li>
             </ul>
           </div>
+        </div>
 
-          {/* Solutions */}
-          <div className="lg:col-span-2">
-            <h3 className="text-lg font-semibold text-gray-900 mb-6">
-              Solutions
-            </h3>
-            <ul className="space-y-4">
-              <li>
-                <Link
-                  href="/midday-engine"
-                  className="text-gray-600 hover:text-green-600 transition-colors"
-                >
-                  Midday Engine
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/self-hosted"
-                  className="text-gray-600 hover:text-green-600 transition-colors"
-                >
-                  Self hosted
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/saas-hosting"
-                  className="text-gray-600 hover:text-green-600 transition-colors"
-                >
-                  SaaS hosting
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/oss-friends"
-                  className="text-gray-600 hover:text-green-600 transition-colors"
-                >
-                  OSS friends
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          {/* Email Subscription */}
-          <div className="lg:col-span-4">
-            <div className="flex flex-col sm:flex-row gap-3">
-              <input
-                type="email"
-                placeholder="Enter email address..."
-                className="flex-1 px-4 py-3 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent bg-gray-100 text-gray-700"
-              />
-              <button className="px-8 py-3 bg-green-600 hover:bg-green-700 text-white rounded-full font-medium transition-colors whitespace-nowrap">
-                Subscribe
-              </button>
-            </div>
-          </div>
+        {/* Mobile-only centered quick links row (visible on sm and md, hidden on lg+) */}
+        <div className="block lg:hidden mt-6 pr-6">
+          <h3 className="text-lg font-semibold text-gray-900 mb-4 text-right">
+            Quick link
+          </h3>
+          <ul className="flex flex-col items-end space-y-3 text-right">
+            <li>
+              <Link
+                href="/"
+                className="text-gray-600 hover:text-green-600 transition-colors"
+              >
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/features"
+                className="text-gray-600 hover:text-green-600 transition-colors"
+              >
+                Features
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/about"
+                className="text-gray-600 hover:text-green-600 transition-colors"
+              >
+                About Us
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/testimonial"
+                className="text-gray-600 hover:text-green-600 transition-colors"
+              >
+                Testimonial
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/faq"
+                className="text-gray-600 hover:text-green-600 transition-colors"
+              >
+                FAQ
+              </Link>
+            </li>
+          </ul>
         </div>
 
         {/* Large Agrative Text with Logo - Full Width */}

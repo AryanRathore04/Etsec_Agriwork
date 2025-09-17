@@ -191,8 +191,11 @@ const productData = {
 interface ProductDetailProps {
   params?: { productId?: string };
 }
-export default function ProductDetailPage({ params }: ProductDetailProps) {
-  const productId = params?.productId;
+export default async function ProductDetailPage({
+  params,
+}: ProductDetailProps) {
+  const awaitedParams = await params;
+  const productId = awaitedParams?.productId;
   if (!productId || !productData[productId as keyof typeof productData]) {
     return (
       <div className="p-8">
@@ -210,18 +213,33 @@ export default function ProductDetailPage({ params }: ProductDetailProps) {
       {/* Header */}
       <div className="bg-white border-b">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-          <Link
-            href="/"
-            className="inline-flex items-center text-green-600 hover:text-green-700 mb-4"
-          >
-            <ArrowLeft className="w-4 h-4 mr-2" />
-            Back to Home
-          </Link>
-          <div className="flex items-center gap-4">
-            <Badge className="bg-green-600 hover:bg-green-600 text-white">
-              {product.category}
-            </Badge>
-            <h1 className="text-3xl font-bold text-gray-900">{product.name}</h1>
+          {/* Responsive header: stacked on mobile, 3-column on md+ */}
+          <div className="flex flex-col md:grid md:grid-cols-3 md:items-center md:gap-4">
+            {/* Left: Back link (left aligned on md+) */}
+            <div className="mb-3 md:mb-0 md:col-span-1">
+              <Link
+                href="/"
+                className="inline-flex items-center text-green-600 hover:text-green-700"
+              >
+                <ArrowLeft className="w-4 h-4 mr-2" />
+                Back to Home
+              </Link>
+            </div>
+
+            {/* Center: Badge above centered headline */}
+            <div className="md:col-span-1 text-center">
+              <div className="inline-block">
+                <Badge className="bg-green-600 hover:bg-green-600 text-white mb-2 inline-block">
+                  {product.category}
+                </Badge>
+              </div>
+              <h1 className="text-3xl sm:text-4xl font-bold text-gray-900">
+                {product.name}
+              </h1>
+            </div>
+
+            {/* Right: empty spacer to balance layout on wide screens */}
+            <div className="md:col-span-1" />
           </div>
         </div>
       </div>
@@ -229,16 +247,21 @@ export default function ProductDetailPage({ params }: ProductDetailProps) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Product Image */}
-          <Card className="overflow-hidden">
-            <CardContent className="p-0">
-              <Image
-                src={product.image}
-                alt={product.name}
-                width={1080}
-                height={600}
-                className="w-full h-96 object-cover"
-                priority
-              />
+          <Card className="overflow-hidden rounded-2xl border-0 shadow-none">
+            <CardContent className="p-0 border-0">
+              <div
+                className="w-full relative overflow-hidden rounded-2xl"
+                style={{ aspectRatio: "4/3" }}
+              >
+                <Image
+                  src={product.image}
+                  alt={product.name}
+                  fill
+                  className="object-cover rounded-2xl"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  priority
+                />
+              </div>
             </CardContent>
           </Card>
 

@@ -2,7 +2,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Menu, X, Leaf } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { InteractiveHoverButton } from "@/components/ui/interactive-hover-button";
@@ -18,19 +18,19 @@ export default function Navigation() {
   ];
   const isActive = (path: string) => pathname === path;
   return (
-    <nav className="absolute top-0 left-0 w-full z-[120] mb-4">
-      <div className="w-full px-4 sm:px-6 lg:px-8 relative z-[130]">
+    <nav className="absolute top-0 left-0 right-0 w-full z-[120] mb-4">
+      <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 md:pr-6 lg:pr-0 relative z-[130]">
         <div className="flex justify-between items-center h-20 w-full">
           <Link
             href="/"
-            className="flex items-center space-x-2 text-gray-900 hover:opacity-80 transition-opacity pt-8"
+            className="flex items-center space-x-2 text-gray-900 hover:opacity-80 transition-opacity pt-2"
           >
             <Image
               src="/Agriwork-svg.svg"
               alt="AgriWork"
-              width={240}
-              height={72}
-              className="h-24 w-auto object-contain"
+              width={300}
+              height={90}
+              className="h-8 sm:h-12 md:h-16 lg:h-24 w-auto object-contain"
             />
           </Link>
           <div className="hidden md:flex items-center space-x-6 lg:space-x-10">
@@ -48,7 +48,7 @@ export default function Navigation() {
               </Link>
             ))}
           </div>
-          <div className="hidden md:flex items-center space-x-6 lg:space-x-10">
+          <div className="hidden md:flex items-center space-x-6 lg:space-x-10 pr-0 md:pr-4 lg:pr-0">
             <Link href="/contact">
               <InteractiveHoverButton text="Contact Us" />
             </Link>
