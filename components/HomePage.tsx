@@ -274,16 +274,31 @@ export default function HomePage() {
           >
             {/* map first 10 products from product-data.json */}
             {(() => {
-              const products: Product[] = ((productData as unknown) as { product_info?: Product[] }).product_info || [];
+              const products: Product[] =
+                (productData as unknown as { product_info?: Product[] })
+                  .product_info || [];
               return products.slice(0, 10).map((p) => {
-                const slug = slugify(`${p.crop_type ?? p.name}-${p.variety_name ?? ''}`);
-                const title = p.variety_name || p.name || 'Product';
-                const subtitle = p.characteristics && (p.characteristics as Record<string, unknown>)['remarks'] ? String((p.characteristics as Record<string, unknown>)['remarks']) : (p.description || '');
+                const slug = slugify(
+                  `${p.crop_type ?? p.name}-${p.variety_name ?? ""}`
+                );
+                const title = p.variety_name || p.name || "Product";
+                const subtitle =
+                  p.characteristics &&
+                  (p.characteristics as Record<string, unknown>)["remarks"]
+                    ? String(
+                        (p.characteristics as Record<string, unknown>)[
+                          "remarks"
+                        ]
+                      )
+                    : p.description || "";
                 return (
-                  <div key={slug} className="flex-none w-72 sm:w-80 relative rounded-2xl overflow-hidden group cursor-pointer h-[380px] sm:h-[450px]">
+                  <div
+                    key={slug}
+                    className="flex-none w-72 sm:w-80 relative rounded-2xl overflow-hidden group cursor-pointer h-[380px] sm:h-[450px]"
+                  >
                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent z-10"></div>
                     <Image
-                      src={p.image || '/agriwork-upper-logo.png'}
+                      src={p.image || "/agriwork-upper-logo.png"}
                       alt={String(title)}
                       width={640}
                       height={900}
@@ -292,10 +307,12 @@ export default function HomePage() {
                     />
                     <div className="absolute bottom-6 left-6 right-6 z-20 text-white">
                       <div className="inline-block px-3 py-1 rounded-full bg-green-600 text-xs font-medium mb-2">
-                        {p.crop_type ?? p.category ?? 'Product'}
+                        {p.crop_type ?? p.category ?? "Product"}
                       </div>
                       <h3 className="text-xl font-semibold mb-2">{title}</h3>
-                      <p className="text-sm text-gray-200 mb-4">{String(subtitle || '').slice(0, 120)}</p>
+                      <p className="text-sm text-gray-200 mb-4">
+                        {String(subtitle || "").slice(0, 120)}
+                      </p>
                       <div className="flex items-center justify-between">
                         <Link href={`/products/${slug}`}>
                           <button className="bg-white text-green-800 px-4 py-2 rounded-full text-sm font-medium hover:bg-gray-100 transition-colors">

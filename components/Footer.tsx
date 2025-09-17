@@ -11,10 +11,10 @@ export default function Footer() {
           {/* Left info section */}
           <div className="lg:col-span-4">
             <h2 className="text-2xl font-bold text-gray-900 mb-4">
-              About Agrivive
+              About Agriwork
             </h2>
             <p className="text-gray-600 mb-6 leading-relaxed">
-              Agrivive partners with farmers to provide eco-friendly products,
+              Agriwork partners with farmers to provide eco-friendly products,
               expert guidance, and smart technology to improve yields and
               sustainability.
             </p>

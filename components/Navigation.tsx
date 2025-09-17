@@ -12,9 +12,9 @@ export default function Navigation() {
   const pathname = usePathname();
   const navItems = [
     { path: "/", label: "Home" },
+    { path: "/products", label: "Products" },
     { path: "/about", label: "About Us" },
     { path: "/careers", label: "Careers" },
-    { path: "/products", label: "Products" },
   ];
   const isActive = (path: string) => pathname === path;
   return (
