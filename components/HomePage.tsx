@@ -5,6 +5,16 @@ import Image from "next/image";
 // Removed unused UI imports to clear ESLint warnings
 import { ArrowRight } from "lucide-react";
 import { InteractiveHoverButton } from "@/components/ui/interactive-hover-button";
+import productData from "../product-data.json";
+import { Product } from "@/lib/types";
+
+const slugify = (s: string) =>
+  s
+    .toLowerCase()
+    .replace(/[\s/\\]+/g, "-")
+    .replace(/[^a-z0-9-]+/g, "")
+    .replace(/--+/g, "-")
+    .replace(/^-+|-+$/g, "");
 
 export default function HomePage() {
   return (
@@ -262,182 +272,42 @@ export default function HomePage() {
             className="flex gap-6 overflow-x-auto pb-4 mb-8 touch-pan-x"
             style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
           >
-            {/* Organic Seeds */}
-            <div className="flex-none w-72 sm:w-80 relative rounded-2xl overflow-hidden group cursor-pointer h-[380px] sm:h-[450px]">
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent z-10"></div>
-              <Image
-                src="/ladybug-leaf.jpg"
-                alt="Organic Seeds"
-                width={640}
-                height={900}
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                sizes="(max-width: 640px) 100vw, 320px"
-              />
-              <div className="absolute bottom-6 left-6 right-6 z-20 text-white">
-                <div className="inline-block px-3 py-1 rounded-full bg-green-600 text-xs font-medium mb-2">
-                  Premium Quality
-                </div>
-                <h3 className="text-xl font-semibold mb-2">Organic Seeds</h3>
-                <p className="text-sm text-gray-200 mb-4">
-                  High-yield organic seeds for sustainable farming.
-                </p>
-                <div className="flex items-center justify-between">
-                  <Link href="/products/organic-seeds">
-                    <button className="bg-white text-green-800 px-4 py-2 rounded-full text-sm font-medium hover:bg-gray-100 transition-colors">
-                      View Details
-                    </button>
-                  </Link>
-                </div>
-              </div>
-            </div>
-
-            {/* Bio-Fertilizers */}
-            <div className="flex-none w-72 sm:w-80 relative rounded-2xl overflow-hidden group cursor-pointer h-[380px] sm:h-[450px]">
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent z-10"></div>
-              <Image
-                src="/ladybug-leaf.jpg"
-                alt="Bio-Fertilizers"
-                width={320}
-                height={450}
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-              />
-              <div className="absolute bottom-6 left-6 right-6 z-20 text-white">
-                <div className="inline-block px-3 py-1 rounded-full bg-blue-600 text-xs font-medium mb-2">
-                  Eco-Friendly
-                </div>
-                <h3 className="text-xl font-semibold mb-2">Bio-Fertilizers</h3>
-                <p className="text-sm text-gray-200 mb-4">
-                  Natural fertilizers to boost soil health and crop yield.
-                </p>
-                <div className="flex items-center justify-between">
-                  <Link href="/products/bio-fertilizers">
-                    <button className="bg-white text-green-800 px-4 py-2 rounded-full text-sm font-medium hover:bg-gray-100 transition-colors">
-                      View Details
-                    </button>
-                  </Link>
-                </div>
-              </div>
-            </div>
-
-            {/* Smart Irrigation Kits */}
-            <div className="flex-none w-72 sm:w-80 relative rounded-2xl overflow-hidden group cursor-pointer h-[380px] sm:h-[450px]">
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent z-10"></div>
-              <Image
-                src="/ladybug-leaf.jpg"
-                alt="Smart Irrigation Kits"
-                width={320}
-                height={450}
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-              />
-              <div className="absolute bottom-6 left-6 right-6 z-20 text-white">
-                <div className="inline-block px-3 py-1 rounded-full bg-purple-600 text-xs font-medium mb-2">
-                  Smart Tech
-                </div>
-                <h3 className="text-xl font-semibold mb-2">
-                  Smart Irrigation Kits
-                </h3>
-                <p className="text-sm text-gray-200 mb-4">
-                  IoT-enabled irrigation systems for water conservation.
-                </p>
-                <div className="flex items-center justify-between">
-                  <Link href="/products/smart-irrigation-kits">
-                    <button className="bg-white text-green-800 px-4 py-2 rounded-full text-sm font-medium hover:bg-gray-100 transition-colors">
-                      View Details
-                    </button>
-                  </Link>
-                </div>
-              </div>
-            </div>
-
-            {/* Pest Control Solutions */}
-            <div className="flex-none w-72 sm:w-80 relative rounded-2xl overflow-hidden group cursor-pointer h-[380px] sm:h-[450px]">
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent z-10"></div>
-              <Image
-                src="/ladybug-leaf.jpg"
-                alt="Pest Control Solutions"
-                width={320}
-                height={450}
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-              />
-              <div className="absolute bottom-6 left-6 right-6 z-20 text-white">
-                <div className="inline-block px-3 py-1 rounded-full bg-orange-600 text-xs font-medium mb-2">
-                  Natural Defense
-                </div>
-                <h3 className="text-xl font-semibold mb-2">
-                  Pest Control Solutions
-                </h3>
-                <p className="text-sm text-gray-200 mb-4">
-                  Organic pest control for healthy crop protection.
-                </p>
-                <div className="flex items-center justify-between">
-                  <Link href="/products/pest-control-solutions">
-                    <button className="bg-white text-green-800 px-4 py-2 rounded-full text-sm font-medium hover:bg-gray-100 transition-colors">
-                      View Details
-                    </button>
-                  </Link>
-                </div>
-              </div>
-            </div>
-
-            {/* Greenhouse Equipment */}
-            <div className="flex-none w-72 sm:w-80 relative rounded-2xl overflow-hidden group cursor-pointer h-[380px] sm:h-[450px]">
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent z-10"></div>
-              <Image
-                src="/ladybug-leaf.jpg"
-                alt="Greenhouse Equipment"
-                width={320}
-                height={450}
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-              />
-              <div className="absolute bottom-6 left-6 right-6 z-20 text-white">
-                <div className="inline-block px-3 py-1 rounded-full bg-teal-600 text-xs font-medium mb-2">
-                  Professional
-                </div>
-                <h3 className="text-xl font-semibold mb-2">
-                  Greenhouse Equipment
-                </h3>
-                <p className="text-sm text-gray-200 mb-4">
-                  Complete greenhouse solutions for controlled farming.
-                </p>
-                <div className="flex items-center justify-between">
-                  <Link href="/products/greenhouse-equipment">
-                    <button className="bg-white text-green-800 px-4 py-2 rounded-full text-sm font-medium hover:bg-gray-100 transition-colors">
-                      View Details
-                    </button>
-                  </Link>
-                </div>
-              </div>
-            </div>
-
-            {/* Soil Testing Kits */}
-            <div className="flex-none w-72 sm:w-80 relative rounded-2xl overflow-hidden group cursor-pointer h-[380px] sm:h-[450px]">
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent z-10"></div>
-              <Image
-                src="/ladybug-leaf.jpg"
-                alt="Soil Testing Kits"
-                width={320}
-                height={450}
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-              />
-              <div className="absolute bottom-6 left-6 right-6 z-20 text-white">
-                <div className="inline-block px-3 py-1 rounded-full bg-red-600 text-xs font-medium mb-2">
-                  Lab Grade
-                </div>
-                <h3 className="text-xl font-semibold mb-2">
-                  Soil Testing Kits
-                </h3>
-                <p className="text-sm text-gray-200 mb-4">
-                  Professional soil analysis for optimal crop planning.
-                </p>
-                <div className="flex items-center justify-between">
-                  <Link href="/products/soil-testing-kits">
-                    <button className="bg-white text-green-800 px-4 py-2 rounded-full text-sm font-medium hover:bg-gray-100 transition-colors">
-                      View Details
-                    </button>
-                  </Link>
-                </div>
-              </div>
-            </div>
+            {/* map first 10 products from product-data.json */}
+            {(() => {
+              const products: Product[] = ((productData as unknown) as { product_info?: Product[] }).product_info || [];
+              return products.slice(0, 10).map((p) => {
+                const slug = slugify(`${p.crop_type ?? p.name}-${p.variety_name ?? ''}`);
+                const title = p.variety_name || p.name || 'Product';
+                const subtitle = p.characteristics && (p.characteristics as Record<string, unknown>)['remarks'] ? String((p.characteristics as Record<string, unknown>)['remarks']) : (p.description || '');
+                return (
+                  <div key={slug} className="flex-none w-72 sm:w-80 relative rounded-2xl overflow-hidden group cursor-pointer h-[380px] sm:h-[450px]">
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent z-10"></div>
+                    <Image
+                      src={p.image || '/agriwork-upper-logo.png'}
+                      alt={String(title)}
+                      width={640}
+                      height={900}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      sizes="(max-width: 640px) 100vw, 320px"
+                    />
+                    <div className="absolute bottom-6 left-6 right-6 z-20 text-white">
+                      <div className="inline-block px-3 py-1 rounded-full bg-green-600 text-xs font-medium mb-2">
+                        {p.crop_type ?? p.category ?? 'Product'}
+                      </div>
+                      <h3 className="text-xl font-semibold mb-2">{title}</h3>
+                      <p className="text-sm text-gray-200 mb-4">{String(subtitle || '').slice(0, 120)}</p>
+                      <div className="flex items-center justify-between">
+                        <Link href={`/products/${slug}`}>
+                          <button className="bg-white text-green-800 px-4 py-2 rounded-full text-sm font-medium hover:bg-gray-100 transition-colors">
+                            View Details
+                          </button>
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
+                );
+              });
+            })()}
           </div>
 
           {/* See All Products Button */}

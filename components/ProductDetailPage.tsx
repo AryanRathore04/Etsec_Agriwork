@@ -188,25 +188,34 @@ const productData = {
   },
 };
 
+import { Product } from "@/lib/types";
+
 interface ProductDetailProps {
   params?: { productId?: string };
+  product?: Product;
 }
+
 export default async function ProductDetailPage({
   params,
+  product,
 }: ProductDetailProps) {
-  const awaitedParams = await params;
-  const productId = awaitedParams?.productId;
-  if (!productId || !productData[productId as keyof typeof productData]) {
-    return (
-      <div className="p-8">
-        Invalid product.{" "}
-        <Link href="/products" className="text-green-600 underline">
-          Back to products
-        </Link>
-      </div>
-    );
+  // product may be passed in (from product-data.json lookup). If not, fall back to the internal map.
+  let productItem: Product | undefined = product;
+  if (!productItem) {
+    const awaitedParams = await params;
+    const productId = awaitedParams?.productId;
+    if (!productId || !productData[productId as keyof typeof productData]) {
+      return (
+        <div className="p-8">
+          Invalid product.{" "}
+          <Link href="/products" className="text-green-600 underline">
+            Back to products
+          </Link>
+        </div>
+      );
+    }
+    productItem = productData[productId as keyof typeof productData] as Product;
   }
-  const product = productData[productId as keyof typeof productData];
 
   return (
     <div className="mt-20 min-h-screen bg-gray-50">
@@ -230,11 +239,11 @@ export default async function ProductDetailPage({
             <div className="md:col-span-1 text-center">
               <div className="inline-block">
                 <Badge className="bg-green-600 hover:bg-green-600 text-white mb-2 inline-block">
-                  {product.category}
+                  {productItem.category || productItem.crop_type}
                 </Badge>
               </div>
               <h1 className="text-3xl sm:text-4xl font-bold text-gray-900">
-                {product.name}
+                {productItem.name || productItem.variety_name}
               </h1>
             </div>
 
@@ -254,8 +263,10 @@ export default async function ProductDetailPage({
                 style={{ aspectRatio: "4/3" }}
               >
                 <Image
-                  src={product.image}
-                  alt={product.name}
+                  src={productItem.image || "/agriwork-upper-logo.png"}
+                  alt={String(
+                    productItem.name || productItem.variety_name || ""
+                  )}
                   fill
                   className="object-cover rounded-2xl"
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
@@ -277,7 +288,14 @@ export default async function ProductDetailPage({
                 </div>
               </div>
               <p className="text-gray-700 leading-relaxed">
-                {product.description}
+                {String(
+                  productItem.description ||
+                    (productItem.characteristics &&
+                      (productItem.characteristics as Record<string, unknown>)[
+                        "remarks"
+                      ]) ||
+                    ""
+                )}
               </p>
             </div>
             <div>
@@ -285,12 +303,14 @@ export default async function ProductDetailPage({
                 Key Features
               </h3>
               <ul className="space-y-3">
-                {product.features.map((feature, index) => (
-                  <li key={index} className="flex items-start gap-3">
-                    <Award className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
-                    <span className="text-gray-700">{feature}</span>
-                  </li>
-                ))}
+                {(productItem.features || []).map(
+                  (feature: string, index: number) => (
+                    <li key={index} className="flex items-start gap-3">
+                      <Award className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
+                      <span className="text-gray-700">{feature}</span>
+                    </li>
+                  )
+                )}
               </ul>
             </div>
             <div className="pt-4">
@@ -312,13 +332,17 @@ export default async function ProductDetailPage({
                 Technical Specifications
               </h3>
               <div className="space-y-4">
-                {Object.entries(product.specifications).map(([key, value]) => (
+                {Object.entries(
+                  (productItem.specifications ||
+                    productItem.characteristics ||
+                    {}) as Record<string, unknown>
+                ).map(([key, value]) => (
                   <div
                     key={key}
                     className="flex justify-between items-center py-2 border-b border-gray-200"
                   >
                     <span className="font-medium text-gray-900">{key}</span>
-                    <span className="text-gray-700">{value}</span>
+                    <span className="text-gray-700">{String(value ?? "")}</span>
                   </div>
                 ))}
               </div>
@@ -331,14 +355,16 @@ export default async function ProductDetailPage({
                 Cultivation Guidelines
               </h3>
               <ol className="space-y-4">
-                {product.cultivation.map((step, index) => (
-                  <li key={index} className="flex gap-4">
-                    <span className="flex-shrink-0 w-8 h-8 bg-green-600 text-white rounded-full flex items-center justify-center font-bold text-sm">
-                      {index + 1}
-                    </span>
-                    <span className="text-gray-700 pt-1">{step}</span>
-                  </li>
-                ))}
+                {((productItem.cultivation || []) as string[]).map(
+                  (step: string, index: number) => (
+                    <li key={index} className="flex gap-4">
+                      <span className="flex-shrink-0 w-8 h-8 bg-green-600 text-white rounded-full flex items-center justify-center font-bold text-sm">
+                        {index + 1}
+                      </span>
+                      <span className="text-gray-700 pt-1">{step}</span>
+                    </li>
+                  )
+                )}
               </ol>
             </CardContent>
           </Card>

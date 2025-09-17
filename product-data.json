@@ -1,0 +1,1540 @@
+{
+  "company_info": {
+    "name": "Agriwork Incorporate",
+    "parent_company": "a JPR Sons",
+    "established": "2018",
+    "motto": "Spreading Prosperity Every Where",
+    "contact": {
+      "phone": "+91 077022 03337",
+      "email": "agriworkinc@gmail.com",
+      "website": "www.agriwork-inc.com",
+      "address": "H.No. 4-5-B6, Srinivasa Homes Apts. Door No. 8-4/401, 4rth Floor, Bandari Layout, Near Liliput School, Hyderabad-509325, Telangana"
+    }
+  },
+  "product_info": [
+    {
+      "crop_type": "Pearl Millet",
+      "variety_name": "KVPMH-93",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": "F1 HYBRID",
+      "characteristics": {
+        "duration": "78-80 days",
+        "plant_height": "180-200 cm",
+        "tillers": "7-8",
+        "earhead_shape": "Tapering at end",
+        "earhead_compactness": "Highly Compact",
+        "earhead_diameter": "3.8-4.0 cm",
+        "earhead_length": "28-30 cm",
+        "grain_color": "Gray",
+        "grain_size": "Bold",
+        "days_to_50_flowering": "45-50",
+        "remarks": "Downy & heat tolerant hybrid"
+      }
+    },
+    {
+      "crop_type": "Maize",
+      "variety_name": "A3W5",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": "F1 HYBRID",
+      "characteristics": {
+        "duration": "105-110 days",
+        "plant_height": "220-230 cm",
+        "cob_length": "22-24 cm",
+        "rows_per_cob": "14-16",
+        "grains_per_row": "48-50",
+        "shanks": "White colored",
+        "seed_type": "Medium bold, semi flint",
+        "seed_color": "Dark yellow",
+        "thousand_seed_weight": "220-240 g",
+        "remarks": "Tolerant to major diseases, Drought tolerance"
+      }
+    },
+    {
+      "crop_type": "Maize",
+      "variety_name": "A3W6",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": "F1 HYBRID",
+      "characteristics": {
+        "duration": "105-110 days",
+        "plant_height": "220-230 cm",
+        "cob_length": "22-24 cm",
+        "rows_per_cob": "14-16",
+        "grains_per_row": "48-50",
+        "shanks": "White colored",
+        "seed_type": "Medium bold, semi flint",
+        "seed_color": "Dark yellow",
+        "thousand_seed_weight": "210-230 g",
+        "remarks": "Very good adoptability, good stress tolerance"
+      }
+    },
+    {
+      "crop_type": "Ash Gourd",
+      "variety_name": "AGRAPETA-101",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": "F-1 HYBRID",
+      "characteristics": {
+        "first_picking": "70-75 days after sowing",
+        "fruit_shape": "Square",
+        "remarks": "Productive hybrid, uniform fruit size, good for transport and storage"
+      }
+    },
+    {
+      "crop_type": "Ash Gourd",
+      "variety_name": "AGRAPETA-102",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": "F-1 HYBRID",
+      "characteristics": {
+        "first_picking": "75-80 days after sowing",
+        "fruit_shape": "Ablong to long",
+        "remarks": "High yielding big long size hybrid"
+      }
+    },
+    {
+      "crop_type": "Asparagus",
+      "variety_name": "ASPRA",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": "F-1 HYBRID",
+      "characteristics": {
+        "remarks": "First asparagus of the season, highly productive, adapts to any garden soil, best for high yield, fine flavor, and largest succulent spears"
+      }
+    },
+    {
+      "crop_type": "Mustard",
+      "variety_name": "SURYA-BOLD",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": "F1 HYBRID",
+      "characteristics": {
+        "duration": "78-80 days",
+        "plant_height": "180-200 cm",
+        "tillers": "7-8",
+        "earhead_shape": "Tapering at end",
+        "earhead_compactness": "Highly Compact",
+        "earhead_diameter": "3.8-4.0 cm",
+        "earhead_length": "28-30 cm",
+        "grain_color": "Gray",
+        "grain_size": "Bold",
+        "days_to_50_flowering": "45-50",
+        "remarks": "Downy & heat tolerant hybrid"
+      }
+    },
+    {
+      "crop_type": "Mustard",
+      "variety_name": "SURYA-GOLD",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": "F1 HYBRID",
+      "characteristics": {
+        "duration": "78-80 days",
+        "plant_height": "180-200 cm",
+        "tillers": "7-8",
+        "earhead_shape": "Tapering at end",
+        "earhead_compactness": "Highly Compact",
+        "earhead_diameter": "3.8-4.0 cm",
+        "earhead_length": "28-30 cm",
+        "grain_color": "Gray",
+        "grain_size": "Bold",
+        "days_to_50_flowering": "45-50",
+        "remarks": "Downy & heat tolerant hybrid"
+      }
+    },
+    {
+      "crop_type": "Papaya",
+      "variety_name": "AWPH-786",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": "F1 HYBRID",
+      "characteristics": {
+        "first_bearing": "at 60-80 cm height",
+        "fruit_count": "over 30 fruits per plant in each fruit setting season",
+        "fruit_shape": "Short-oblong",
+        "fruit_weight": "1.5-2 kg",
+        "flesh": "Thick",
+        "remarks": "Early, vigorous, productive, tolerant to papaya ring spot virus, good shipper"
+      }
+    },
+    {
+      "crop_type": "Papaya",
+      "variety_name": "AWPH-788",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": "F1 HYBRID",
+      "characteristics": {
+        "first_bearing": "at 60-80 cm height",
+        "fruit_count": "over 30 fruits per plant in each fruit setting season",
+        "fruit_shape": "Round",
+        "fruit_weight": "1.5-2 kg",
+        "flesh": "Thick",
+        "remarks": "Early, vigorous, productive, tolerant to papaya ring spot virus, good shipper"
+      }
+    },
+    {
+      "crop_type": "Beetroot",
+      "variety_name": "ABH-201",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": "F-1 HYBRID",
+      "characteristics": {
+        "first_picking": "50-55 days after sowing",
+        "fruit_weight": "100-150 g",
+        "remarks": "Can stand in the field for 30 days after maturity without cracking or losing color & taste, size keeps increasing up to 400 g"
+      }
+    },
+    {
+      "crop_type": "Beetroot",
+      "variety_name": "ABH-206",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": "F-1 HYBRID",
+      "characteristics": {
+        "first_picking": "50-55 days after sowing",
+        "fruit_weight": "150-200 g",
+        "remarks": "Crispy and tasty with good keeping quality, round uniform shape roots that are dark red in color"
+      }
+    },
+    {
+      "crop_type": "Beetroot",
+      "variety_name": "ABH-209",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": "F-1 HYBRID",
+      "characteristics": {
+        "first_picking": "50-55 days after sowing",
+        "fruit_weight": "100-150 g",
+        "remarks": "Can stand in the field for 30 days after maturity without cracking or losing color & taste"
+      }
+    },
+    {
+      "crop_type": "Marigold",
+      "variety_name": "KUSAM-20",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": "F1 HYBRID",
+      "characteristics": {
+        "duration": "60 days after transplanting",
+        "flower_color": "Yellow",
+        "plant_height": "2 ft",
+        "flower_weight": "10-12 g",
+        "remarks": "High yield, attractive color, suitable for Kharif"
+      }
+    },
+    {
+      "crop_type": "Marigold",
+      "variety_name": "KUSAM-30",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": "F1 HYBRID",
+      "characteristics": {
+        "duration": "70 days after transplanting",
+        "flower_color": "Orange",
+        "flower_compactness": "Compact",
+        "plant_height": "2.5 ft",
+        "flower_weight": "12-18 g",
+        "remarks": "High yield, attractive color, suitable for Kharif"
+      }
+    },
+    {
+      "crop_type": "Eggplant",
+      "variety_name": "AWEH-306",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": "F-1 HYBRID",
+      "characteristics": {
+        "first_picking": "65-70 days after transplanting",
+        "fruit_weight": "60-80 g",
+        "fruit_shape": "Oval round",
+        "fruit_color": "Dark purple with white strips",
+        "season": "Kharif, Rabi & pre summer",
+        "thorns": "Thorn present",
+        "remarks": "High yielding, good shining, heavy clusters bearing"
+      }
+    },
+    {
+      "crop_type": "Eggplant",
+      "variety_name": "AWEH-302",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": "F-1 HYBRID",
+      "characteristics": {
+        "first_picking": "65-70 days after transplanting",
+        "fruit_weight": "80-140 g",
+        "fruit_shape": "Oval round",
+        "fruit_color": "Dark Purple with white strips",
+        "season": "Rabi",
+        "thorns": "Thornless",
+        "remarks": "Single bearing fruit types, fruit gives attractive color"
+      }
+    },
+    {
+      "crop_type": "Eggplant",
+      "variety_name": "AWEH-309",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": "F-1 HYBRID",
+      "characteristics": {
+        "first_picking": "55-60 days after transplanting",
+        "fruit_weight": "60-70 g",
+        "fruit_shape": "Ovate",
+        "fruit_color": "Attractive green with purple stripes",
+        "season": "Kharif, Rabi & pre summer",
+        "thorns": "Thorns",
+        "remarks": "High yield potential"
+      }
+    },
+    {
+      "crop_type": "Eggplant",
+      "variety_name": "AWEH-310",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": "F-1 HYBRID",
+      "characteristics": {
+        "first_picking": "65-75 days after transplanting",
+        "fruit_weight": "150-300 g",
+        "fruit_shape": "Oval round",
+        "fruit_color": "Black",
+        "season": "Kharif, Rabi & pre summer",
+        "thorns": "Thornless",
+        "remarks": "High yielding hybrid, shining fruit"
+      }
+    },
+    {
+      "crop_type": "Eggplant",
+      "variety_name": "AWEH-316",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": "F-1 HYBRID",
+      "characteristics": {
+        "first_picking": "60-70 days after transplanting",
+        "fruit_weight": "80-120 g",
+        "fruit_shape": "Long",
+        "fruit_color": "Dark Purple",
+        "season": "Kharif, Rabi & pre summer",
+        "thorns": "Thornless",
+        "remarks": "High yielding, good shining, heavy clusters bearing & bacterial wilt tolerance"
+      }
+    },
+    {
+      "crop_type": "Eggplant",
+      "variety_name": "AWEH-319",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": "F-1 HYBRID",
+      "characteristics": {
+        "first_picking": "65-70 days after transplanting",
+        "fruit_weight": "80-120 g",
+        "fruit_shape": "Long",
+        "fruit_color": "Black Purple",
+        "season": "Kharif, Rabi & pre summer",
+        "thorns": "Thornless",
+        "remarks": "High yielding, good shining, heavy clusters bearing & bacterial wilt tolerance"
+      }
+    },
+    {
+      "crop_type": "Eggplant",
+      "variety_name": "AWEH-322",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": "F-1 HYBRID",
+      "characteristics": {
+        "first_picking": "65-70 days after transplanting",
+        "fruit_weight": "60-80 g",
+        "fruit_shape": "Oval",
+        "fruit_color": "Green with light white strips",
+        "season": "Kharif, Rabi & pre summer",
+        "thorns": "Thornless",
+        "remarks": "High yielding, good shining, heavy clusters bearing & bacterial wilt tolerance"
+      }
+    },
+    {
+      "crop_type": "Eggplant",
+      "variety_name": "AWEH-329",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": "F-1 HYBRID",
+      "characteristics": {
+        "first_picking": "65-70 days after transplanting",
+        "fruit_weight": "80-100 g",
+        "fruit_shape": "Medium long",
+        "fruit_color": "Pale Green",
+        "season": "Kharif, Rabi & pre summer",
+        "thorns": "Thornless",
+        "remarks": "High yielding & shining fruit"
+      }
+    },
+    {
+      "crop_type": "Eggplant",
+      "variety_name": "AWEH-339",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": "F-1 HYBRID",
+      "characteristics": {
+        "first_picking": "60-65 days after transplanting",
+        "fruit_weight": "60-65 g",
+        "fruit_shape": "Ob-ovate",
+        "fruit_color": "Bright green with creamy streaks at base",
+        "thorns": "Thornless",
+        "remarks": "Well adapted to wide range of climatic conditions with good field standing ability"
+      }
+    },
+    {
+      "crop_type": "Paddy Seed",
+      "variety_name": "BIRSHA-120",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": "F-1 HYBRID",
+      "characteristics": {
+        "plant_height": "85-90 cm",
+        "plant_type": "Semi Dwarf",
+        "leaf_color": "Light Green",
+        "plant_length": "Medium",
+        "stem_thickness": "Strong, Medium to Thick",
+        "grain_type": "Medium Slender",
+        "days_to_maturity": "130-135"
+      }
+    },
+    {
+      "crop_type": "Paddy Seed",
+      "variety_name": "KRASHAK-120",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": "F-1 HYBRID",
+      "characteristics": {
+        "plant_height": "90-95 cm",
+        "plant_type": "Medium Semi Tall",
+        "leaf_color": "Light Green",
+        "plant_length": "Medium",
+        "stem_thickness": "Strong, Medium to Thick",
+        "grain_type": "Long Slender",
+        "days_to_maturity": "120-125"
+      }
+    },
+    {
+      "crop_type": "Paddy Seed",
+      "variety_name": "KOLAWERI-125",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": "IMPROVED",
+      "characteristics": {
+        "plant_height": "90-95 cm",
+        "plant_type": "Medium Semi Tall",
+        "leaf_color": "Green",
+        "plant_length": "Long",
+        "stem_thickness": "Strong, Medium to Thick",
+        "grain_type": "Long Slender",
+        "days_to_maturity": "120-125"
+      }
+    },
+    {
+      "crop_type": "Paddy Seed",
+      "variety_name": "ROYAL KOLAM",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": "IMPROVED",
+      "characteristics": {
+        "plant_height": "90-95 cm",
+        "plant_type": "Medium Tall",
+        "leaf_color": "Green",
+        "plant_length": "Short",
+        "stem_thickness": "Strong, Medium to Thick",
+        "grain_type": "Short Grain Fine",
+        "days_to_maturity": "130-135"
+      }
+    },
+    {
+      "crop_type": "Paddy Seed",
+      "variety_name": "BIRSHA-110",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": "F-1 HYBRID",
+      "characteristics": {
+        "plant_height": "80-85 cm",
+        "plant_type": "Semi Dwarf",
+        "leaf_color": "Light Green",
+        "plant_length": "Medium",
+        "stem_thickness": "Strong, Medium to Thick",
+        "grain_type": "Long Slender",
+        "days_to_maturity": "100-110"
+      }
+    },
+    {
+      "crop_type": "Pigeon Pea",
+      "variety_name": "HANUMAT",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": null,
+      "characteristics": {
+        "growth_habit": "Spreading",
+        "plant_height": "200-210 cm",
+        "branching": "Heavy",
+        "flower_color": "Yellow",
+        "grain_color": "Red",
+        "grain_type": "Bold",
+        "duration": "150-160 days",
+        "dal_quality": "Excellent",
+        "remarks": "Highly tolerant to wilt disease, tolerant to pod borer, good reflush under irrigated conditions, very high yield"
+      }
+    },
+    {
+      "crop_type": "Green Gram (Moong)",
+      "variety_name": "VIRAT",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": null,
+      "characteristics": {
+        "duration": "60-65 days",
+        "growth_habit": "Determinate",
+        "grain_color": "Shiny green",
+        "grain_size": "Bold",
+        "plant_height": "50-60 cm",
+        "grains_per_pod": "12",
+        "remarks": "Semi spreading plant type, tolerant to powdery mildew and YMV diseases, timely sowing in kharif"
+      }
+    },
+    {
+      "crop_type": "Black Gram (Urad)",
+      "variety_name": "NALINI",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": null,
+      "characteristics": {
+        "duration": "70-75 days",
+        "growth_habit": "Compact, Determinate",
+        "grain_color": "Black bold",
+        "grains_per_pod": "6-8",
+        "remarks": "Less foliage and synchronous maturity, tolerant to YMV and powdery mildew diseases"
+      }
+    },
+    {
+      "crop_type": "Bitter Gourd",
+      "variety_name": "ANUSHRI",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": "F-1 HYBRID",
+      "characteristics": {
+        "first_picking": "50-55 days after sowing",
+        "fruit_length": "20-22 cm",
+        "fruit_shape": "Medium Long thick with pointed spines",
+        "fruit_color": "Dark Green",
+        "season": "Kharif, Rabi & pre summer",
+        "remarks": "Fruits are attractive, straight with good spines"
+      }
+    },
+    {
+      "crop_type": "Bitter Gourd",
+      "variety_name": "POOJA",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": "F-1 HYBRID",
+      "characteristics": {
+        "first_picking": "50-55 days after sowing",
+        "fruit_length": "20-22 cm",
+        "fruit_shape": "Spiny",
+        "fruit_color": "Attractive white",
+        "season": "Kharif, Rabi & pre summer",
+        "remarks": "Long, straight, very high yielding and vigorous growing hybrid"
+      }
+    },
+    {
+      "crop_type": "Bitter Gourd",
+      "variety_name": "PALAK",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": "F-1 HYBRID",
+      "characteristics": {
+        "first_picking": "48-53 days after sowing",
+        "fruit_length": "20-25 cm",
+        "fruit_shape": "Long thick with pointed spines",
+        "fruit_color": "Shiny Green",
+        "season": "Kharif, Rabi & pre summer",
+        "remarks": "Creeper vigor very strong, fruits are long shiny green attractive in shape, extremely spine and high yielding"
+      }
+    },
+    {
+      "crop_type": "Bitter Gourd",
+      "variety_name": "DIAMOND (CHUVVA)",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": "F-1 HYBRID",
+      "characteristics": {
+        "first_picking": "45-50 days after sowing",
+        "fruit_length": "20-22 cm",
+        "fruit_shape": "Short spiny",
+        "fruit_color": "Attractive shining green",
+        "season": "Kharif, Rabi & pre summer",
+        "remarks": "Very short length (like a chuhha), thick spiny"
+      }
+    },
+    {
+      "crop_type": "Wheat",
+      "variety_name": "KARTHIKA-303",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": "IMPROVED",
+      "characteristics": {
+        "duration": "115-120 days",
+        "plant_height": "90-95",
+        "tillers_per_plant": "12-15",
+        "spike_length": "10-12 cm",
+        "remarks": "Midlate maturity, medium bold short shiny grains, excellent chapati quality, aroma and taste, highly tolerant to rust disease, recommended for central, north east"
+      }
+    },
+    {
+      "crop_type": "Wheat",
+      "variety_name": "KONARK-35",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": "IMPROVED",
+      "characteristics": {
+        "duration": "115-120 days",
+        "plant_height": "90-95",
+        "tillers_per_plant": "12-15",
+        "spike_length": "10-12 cm",
+        "remarks": "Midlate maturity, medium bold short shiny grains, excellent chapati quality, aroma and taste, highly tolerant to rust disease, recommended for central, north east"
+      }
+    },
+    {
+      "crop_type": "Muskmelon",
+      "variety_name": "AWMH-24",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": "F-1 HYBRID",
+      "characteristics": {
+        "fruit_weight": "0.5-1 Kg",
+        "days_to_maturity": "65-70 Days after sowing",
+        "fruit_shape": "Round",
+        "fruit_skin_color": "Green strips with smooth skin",
+        "remarks": "Creamy white crispy flesh, high sugar content, excellent transportability"
+      }
+    },
+    {
+      "crop_type": "Muskmelon",
+      "variety_name": "KARAN",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": "F-1 HYBRID",
+      "characteristics": {
+        "fruit_weight": "1.0-1.25 Kg",
+        "days_to_maturity": "65-70 Days after sowing",
+        "fruit_shape": "Round",
+        "fruit_skin_color": "Light Green",
+        "flesh_texture": "Good",
+        "seed_cavity": "Small",
+        "tss_percentage": "12.5-13.5%",
+        "remarks": "High yielding, uniform netting, very sweet flesh, excellent transportability"
+      }
+    },
+    {
+      "crop_type": "Muskmelon",
+      "variety_name": "SUNSHINE",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": "F-1 HYBRID",
+      "characteristics": {
+        "fruit_weight": "0.8-1.2 Kg",
+        "days_to_maturity": "65-70 Days after sowing",
+        "fruit_shape": "Oval round",
+        "fruit_skin_color": "Yellow with smooth skin",
+        "remarks": "Creamy white crispy flesh, high sugar content, excellent transportability"
+      }
+    },
+    {
+      "crop_type": "Muskmelon",
+      "variety_name": "NOVA GOLD",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": "F-1 HYBRID",
+      "characteristics": {
+        "fruit_weight": "1.5-2 Kg",
+        "days_to_maturity": "70-75 Days after sowing",
+        "fruit_shape": "Round",
+        "fruit_skin": "Dense netting",
+        "flesh_color": "Orange",
+        "remarks": "Big fruits, very small seed cavity, long distance transport ability"
+      }
+    },
+    {
+      "crop_type": "Beans",
+      "variety_name": "AWB-11",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": "IMPROVED PENCIL BEANS",
+      "characteristics": {
+        "bearing_type": "Bunching type",
+        "pod_shape": "Round",
+        "pod_color": "Attractive light green",
+        "pod_length": "13-15 cm",
+        "maturity": "55-60 days",
+        "plant_height": "2-2.5 ft"
+      }
+    },
+    {
+      "crop_type": "Beans",
+      "variety_name": "AWB-12",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": "IMPROVED",
+      "characteristics": {
+        "bearing_type": "Bunching type",
+        "pod_shape": "Round",
+        "pod_color": "Attractive green",
+        "pod_length": "12-15 cm",
+        "maturity": "53-60 days",
+        "plant_height": "2-2.5 ft"
+      }
+    },
+    {
+      "crop_type": "Knol Khol",
+      "variety_name": "MANALI",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": null,
+      "characteristics": {
+        "maturity": "55-60 days after sowing",
+        "weight": "100-150 g",
+        "remarks": "Good standing ability up to 30 days after maturity, can grow up to 300g without cracking or fiber development"
+      }
+    },
+    {
+      "crop_type": "Squash",
+      "variety_name": "AWSQ-101",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": "F-1 HYBRID",
+      "characteristics": {
+        "maturity": "30-40 days from sowing",
+        "fruit_color": "Dark Green",
+        "remarks": "Open erect plant with uniform cylindrical fruits, easy fruit picking, high yielder, early maturity, easy to harvest"
+      }
+    },
+    {
+      "crop_type": "Squash",
+      "variety_name": "AWSQ-102",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": "F-1 HYBRID",
+      "characteristics": {
+        "maturity": "30-40 days from sowing",
+        "fruit_color": "Dark Green",
+        "remarks": "Open erect plant with uniform cylindrical fruits, easy fruit picking, high yielder, early maturity, easy to harvest"
+      }
+    },
+    {
+      "crop_type": "Bottle Gourd",
+      "variety_name": "VISHNU",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": "F-1 HYBRID",
+      "characteristics": {
+        "first_picking": "55-60 days from sowing",
+        "fruit_length": "1.5-2.0 ft",
+        "fruit_shape": "Cylindrical",
+        "fruit_color": "Shiny Green",
+        "season": "Kharif, Rabi & pre summer",
+        "remarks": "Attractive, straight fruits, high yielding uniform hybrid with vigorous creeper"
+      }
+    },
+    {
+      "crop_type": "Bottle Gourd",
+      "variety_name": "VENU",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": "F-1 HYBRID",
+      "characteristics": {
+        "first_picking": "55-60 days from sowing",
+        "fruit_weight": "1-1.5 kg",
+        "fruit_shape": "Little Bulb shape Round",
+        "fruit_color": "Shiny Green",
+        "season": "Kharif, Rabi & pre summer",
+        "remarks": "Suitable to harvest as a tender fruit, very high yielding, can be grown in all seasons"
+      }
+    },
+    {
+      "crop_type": "Bottle Gourd",
+      "variety_name": "TRUMP",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": "F-1 HYBRID",
+      "characteristics": {
+        "first_picking": "55-60 days from sowing",
+        "fruit_weight": "1.5-2.0 kg",
+        "fruit_shape": "Bottle type high Round",
+        "fruit_color": "Shiny Green",
+        "season": "Kharif, Rabi & pre summer",
+        "remarks": "Attractive green color, high yielding uniform hybrid with vigorous creeper"
+      }
+    },
+    {
+      "crop_type": "Broccoli",
+      "variety_name": "BRONO",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": null,
+      "characteristics": {
+        "maturity": "65-70 Days after transplanting",
+        "head_weight": "800-1000g",
+        "compactness": "Very compact",
+        "remarks": "Very compact, fine beads, very high yielding, can be planted in winter season in the plains"
+      }
+    },
+    {
+      "crop_type": "Tinda",
+      "variety_name": "SAMARKING",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": "F-1 HYBRID",
+      "characteristics": {
+        "first_picking": "40-45 days after sowing",
+        "fruit_shape": "Medium size Round",
+        "fruit_color": "Green",
+        "fruit_weight": "80-100g",
+        "remarks": "Attractive green color, high yielding vigorous hybrid"
+      }
+    },
+    {
+      "crop_type": "Carrot",
+      "variety_name": "AWCH-902",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": "F-1 HYBRID",
+      "characteristics": {
+        "days_to_maturity": "110 days from sowing",
+        "fruit_shape": "Cylindrical",
+        "fruit_color": "Deep Orange",
+        "remarks": "Uniform, very high yielding, vigorous growing, edible core, deep orange color"
+      }
+    },
+    {
+      "crop_type": "Carrot",
+      "variety_name": "AWCH-903",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": "F-1 HYBRID",
+      "characteristics": {
+        "days_to_maturity": "65-70 days from sowing",
+        "fruit_shape": "Conical",
+        "remarks": "Red carrot that doesn't bolt, produces smooth, uniform 10 inch roots with soft edible core, consistent rich internal color, strong tops with good disease resistance"
+      }
+    },
+    {
+      "crop_type": "Carrot",
+      "variety_name": "AWCH-906",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": "F-1 HYBRID",
+      "characteristics": {
+        "days_to_maturity": "100 days from sowing",
+        "fruit_shape": "Conical",
+        "fruit_color": "Thick Orange",
+        "remarks": "Compares with Nantes, very soft edible core, gives long carrots with vigorous upright growing leaves, good taste"
+      }
+    },
+    {
+      "crop_type": "Hot Pepper",
+      "variety_name": "TAPTI",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": "F-1 HYBRID",
+      "characteristics": {
+        "plant_height": "4 ft",
+        "first_picking": "75-80 days after transplanting",
+        "fruit_length": "6-8 cm",
+        "fruit_diameter": "1.5 cm",
+        "fruit_surface": "Smooth to slightly wrinkled",
+        "unripe_color": "Light Green to green",
+        "ripe_color": "Red",
+        "pungency": "Highly Pungent",
+        "remarks": "Good heat tolerance, suitable for dry chilli"
+      }
+    },
+    {
+      "crop_type": "Hot Pepper",
+      "variety_name": "TAPTI-4",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": "F-1 HYBRID",
+      "characteristics": {
+        "plant_height": "3 ft",
+        "first_picking": "60 days after transplanting",
+        "fruit_length": "16 cm",
+        "fruit_diameter": "1.6 cm",
+        "fruit_surface": "Smooth",
+        "unripe_color": "Dark Green",
+        "ripe_color": "Dark Red",
+        "pungency": "Pungent",
+        "remarks": "Thick skin, recommended for dry chilli, very high yielding"
+      }
+    },
+    {
+      "crop_type": "Hot Pepper",
+      "variety_name": "TAPTI 2680",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": "F-1 HYBRID",
+      "characteristics": {
+        "plant_height": "2.5 to 3 ft",
+        "first_picking": "55-60 days after transplanting",
+        "fruit_length": "14-16 cm",
+        "fruit_diameter": "1.2 cm",
+        "fruit_surface": "Less wrinkled",
+        "unripe_color": "Green",
+        "ripe_color": "Dark Red",
+        "pungency": "Pungent",
+        "remarks": "Good heat tolerance, suitable for fresh market"
+      }
+    },
+    {
+      "crop_type": "Hot Pepper",
+      "variety_name": "TAPTI GOLD",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": "F-1 HYBRID",
+      "characteristics": {
+        "plant_height": "3 ft",
+        "first_picking": "60 days after transplanting",
+        "fruit_length": "16 cm",
+        "fruit_diameter": "1.6 cm",
+        "fruit_surface": "Smooth",
+        "unripe_color": "Dark Green",
+        "ripe_color": "Dark Red",
+        "pungency": "Pungent",
+        "remarks": "Thick skin, recommended for dry chilli, very high yielding"
+      }
+    },
+    {
+      "crop_type": "Sweet Corn",
+      "variety_name": "MADHURAS-509",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": "F-1 HYBRID",
+      "characteristics": {
+        "plant_height": "5 to 6 ft",
+        "maturity": "78-85 days",
+        "50_silking": "53-55 days",
+        "plant_density_per_ha": "55000-60000",
+        "cobs_color": "Yellow",
+        "ear_length": "8.5 inch",
+        "ear_diameter": "1.8 inch",
+        "rows_of_kernels": "14-16",
+        "sugar_percent": "15-16 Brix",
+        "remarks": "Very good plant vigor and height, recommended for winter"
+      }
+    },
+    {
+      "crop_type": "Sweet Corn",
+      "variety_name": "MADHURAS-505",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": "F-1 HYBRID",
+      "characteristics": {
+        "plant_type": "230-260 cm, vigorous, uniform plant",
+        "ear_placement": "Medium (100-110 cm)",
+        "harvest": "75-80 days",
+        "cob_color": "Creamy yellow",
+        "sweetness": "Good",
+        "tss": "16-17%",
+        "remarks": "Excellent grain quality, long uniform cylindrical cobs, excellent tip filing"
+      }
+    },
+    {
+      "crop_type": "Tomato",
+      "variety_name": "MEENU",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": "F-1 HYBRID",
+      "characteristics": {
+        "plant_type": "Determinate",
+        "first_picking": "50-55 days after transplanting",
+        "fruit_shape": "Flat round",
+        "fruit_weight": "90 g",
+        "fruit_color_skin": "Red with medium good skin",
+        "season": "Round the year",
+        "remarks": "It is a very high yielding hybrid with wide adaptability to different climatic areas"
+      }
+    },
+    {
+      "crop_type": "Tomato",
+      "variety_name": "MRUNAL",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": "F-1 HYBRID",
+      "characteristics": {
+        "plant_type": "Semi determinate",
+        "first_picking": "65 days after transplanting",
+        "fruit_shape": "Flat round with green shoulder",
+        "fruit_weight": "100-120 g",
+        "fruit_color_skin": "Red medium skin",
+        "season": "Kharif & Rabi",
+        "remarks": "It is sour taste local type hybrid with very high yield potentiality"
+      }
+    },
+    {
+      "crop_type": "Tomato",
+      "variety_name": "MEERA",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": "F-1 HYBRID",
+      "characteristics": {
+        "plant_type": "Indeterminate",
+        "first_picking": "65 days after transplanting",
+        "fruit_shape": "Square round",
+        "fruit_weight": "100-120 g",
+        "fruit_color_skin": "Red very thick skin",
+        "season": "Rabi",
+        "remarks": "It is very high yielding with good skin quality suitable for long transport"
+      }
+    },
+    {
+      "crop_type": "Tomato",
+      "variety_name": "MITHALI",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": "F-1 HYBRID",
+      "characteristics": {
+        "plant_type": "Determinate",
+        "first_picking": "70-75 days after transplanting",
+        "fruit_shape": "Oval round",
+        "fruit_weight": "100-110 g",
+        "fruit_color_skin": "Deep red thick skin",
+        "season": "Kharif, Rabi & pre Summer",
+        "remarks": "It is very high yielding with good skin quality suitable for long transport"
+      }
+    },
+    {
+      "crop_type": "Capsicum",
+      "variety_name": "SUPER WONDER",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": "IMPORTED",
+      "characteristics": {
+        "plant_height": "2-3 ft",
+        "first_picking": "70-80 days after transplanting",
+        "weight": "80-100 g",
+        "unripe_color": "Green",
+        "ripe_color": "Red",
+        "remarks": "Green high yielding hybrid, which can be grown in all seasons"
+      }
+    },
+    {
+      "crop_type": "Capsicum",
+      "variety_name": "AWSH-401",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": "F-1 HYBRID",
+      "characteristics": {
+        "plant_height": "3 ft",
+        "first_picking": "65 days after transplanting",
+        "weight": "80-100 g",
+        "unripe_color": "Green",
+        "ripe_color": "Red",
+        "remarks": "Green blocky high yielding hybrid, which can be grown in kharif, Rabi and pre summer"
+      }
+    },
+    {
+      "crop_type": "Watermelon",
+      "variety_name": "KARTHIK",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": "F-1 HYBRID",
+      "characteristics": {
+        "fruit_weight": "2.5-3 Kg",
+        "days_to_maturity": "65-70 Days after sowing",
+        "fruit_shape": "Oblong",
+        "fruit_color_skin": "Black outside",
+        "flesh": "Bright Red crispy",
+        "remarks": "High yeilding with good transport quality & extra sweet taste"
+      }
+    },
+    {
+      "crop_type": "Watermelon",
+      "variety_name": "GOALDE",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": "F-1 HYBRID",
+      "characteristics": {
+        "fruit_weight": "6-8 Kg",
+        "days_to_maturity": "85 Days after sowing",
+        "fruit_shape": "Round",
+        "fruit_color_skin": "Black outside",
+        "flesh": "Red and juicy",
+        "remarks": "Early maturing vigorous vines that protects against sunburn, high yielding"
+      }
+    },
+    {
+      "crop_type": "Watermelon",
+      "variety_name": "AW-757",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": "F-1 HYBRID",
+      "characteristics": {
+        "fruit_weight": "12-15 Kg",
+        "days_to_maturity": "85 Days after sowing",
+        "fruit_shape": "Oblong",
+        "fruit_color_skin": "Light green with dark green strips",
+        "flesh": "Bright red, sweet and crispy",
+        "remarks": "Early hybrid, having strong vines with bright red interior and very sweet in taste."
+      }
+    },
+    {
+      "crop_type": "Cluster Bean",
+      "variety_name": "RANI",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": "IMPROVED",
+      "characteristics": {
+        "growth_habit": "Indeterminate",
+        "days_to_maturity": "35-40 from sowing (Green)",
+        "pod_characteristics": "Light green, long (10-11 cm), flat (1 cm)",
+        "crop_duration": "130-135 days",
+        "yield": "High",
+        "remarks": "Suitable for mild summer, rainy and mild winter seasons"
+      }
+    },
+    {
+      "crop_type": "Cucumber",
+      "variety_name": "RAGHURAJ",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": "F-1 HYBRID",
+      "characteristics": {
+        "fruit_length": "26-28 cm",
+        "fruit_weight": "200-220 g each",
+        "fruit_color": "Shiny, light green with white specks",
+        "fruit_shape": "Cylindrical",
+        "remarks": "Continuous yielder, vigorous plants are prolific in yielding ability"
+      }
+    },
+    {
+      "crop_type": "Cucumber",
+      "variety_name": "SURABHI",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": "F-1 HYBRID",
+      "characteristics": {
+        "fruit_length": "18-20 cm",
+        "fruit_weight": "180-200 g",
+        "fruit_color": "Shiny, smooth, uniform, medium green with white specks",
+        "skin_texture": "Smooth",
+        "flesh_texture": "Crispy and free from bitter principles",
+        "remarks": "Early hybrid, excellent yielder, medium vigorous plants"
+      }
+    },
+    {
+      "crop_type": "Radish",
+      "variety_name": "AWRH-603",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": "F-1 HYBRID",
+      "characteristics": {
+        "leaf_crown": "Leaves with entire margin",
+        "first_marketable_produce": "40-45 days after sowing",
+        "root_shape": "Straight",
+        "root_color": "Pure white",
+        "root_length": "38-40 cm",
+        "remarks": "Crispy and tender flesh with mild pungency"
+      }
+    },
+    {
+      "crop_type": "Radish",
+      "variety_name": "AWRH-605",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": "F-1 HYBRID",
+      "characteristics": {
+        "root_length": "4-5 long",
+        "root_shape": "Cylindrical",
+        "root_color": "Deep pink",
+        "flesh": "Crisp white",
+        "flavor": "Hot and unusually sweet",
+        "foliage": "Edible, smooth, strapleaf with rhubarb-pink stems",
+        "remarks": "Slow bolting, and can be sown throughout the year"
+      }
+    },
+    {
+      "crop_type": "Radish",
+      "variety_name": "AWRH-607",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": "F-1 HYBRID",
+      "characteristics": {
+        "root_shape": "Round",
+        "root_color": "Pink",
+        "root_diameter": "1 to 1.25 inches",
+        "interior_color": "White",
+        "flavor": "Mild",
+        "tops_height": "4 to 5 inches",
+        "relative_maturity": "30 days",
+        "remarks": "Holds well in storage"
+      }
+    },
+    {
+      "crop_type": "Radish",
+      "variety_name": "PUSA CHETKI LONG",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": "IMPROVED",
+      "characteristics": {
+        "leaf_crown": "Leaves with entire margin",
+        "first_marketable_produce": "50-55 days after sowing",
+        "root_shape": "Long cylindrical",
+        "root_color": "Pure white",
+        "root_length": "35-40 cm",
+        "remarks": "Suitable for August to November sowing in Northern and Eastern India"
+      }
+    },
+    {
+      "crop_type": "Cabbage",
+      "variety_name": "AWCB-601",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": "F-1 HYBRID",
+      "characteristics": {
+        "days_to_maturity": "70-75 days after transplanting",
+        "head_shape": "Round",
+        "compactness": "Very compact & Firm",
+        "standing_ability": "30 days after maturity",
+        "head_weight": "1.5-2.5kg average",
+        "season": "Round the year",
+        "remarks": "Specially recommended for sowing in summer and rainy season"
+      }
+    },
+    {
+      "crop_type": "Cabbage",
+      "variety_name": "AWCB-602",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": "F-1 HYBRID",
+      "characteristics": {
+        "days_to_maturity": "60-65 days after transplanting",
+        "head_shape": "Attractive round",
+        "compactness": "Very compact",
+        "standing_ability": "30 days after maturity",
+        "head_weight": "1.2kg averag",
+        "season": "Kharif& Rabi",
+        "remarks": "Very durable hybrid. it can give head in all seasons. Good for long transport."
+      }
+    },
+    {
+      "crop_type": "Cauliflower",
+      "variety_name": "AWCF-301",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": "F-1 HYBRID",
+      "characteristics": {
+        "days_to_maturity": "70 Days after transplanting",
+        "compactness": "Very compact with self blanching leaves",
+        "curd_color": "Snow white",
+        "curd_weight": "1 to 1.5 Kg",
+        "season": "August-November sowing in the plains",
+        "remarks": "It is a uniform mid early cauliflower which gives non hairy, white curds"
+      }
+    },
+    {
+      "crop_type": "Cauliflower",
+      "variety_name": "AWCF-302",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": "F-1 HYBRID",
+      "characteristics": {
+        "days_to_maturity": "50-55 Days after transplanting",
+        "compactness": "Medium compact curds",
+        "curd_weight": "0.6-1kg",
+        "season": "Rainy Season",
+        "remarks": "It is a early maturing hybrid excellent for rainy season"
+      }
+    },
+    {
+      "crop_type": "Ridge Gourd",
+      "variety_name": "REVATI",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": "F-1 HYBRID",
+      "characteristics": {
+        "first_picking": "50-55 days after sowing",
+        "fruit_color": "Attractive green",
+        "fruit_shape": "Long with deep ridges",
+        "average_fruit_length": "45-50 cm",
+        "average_fruit_weight": "200-250",
+        "remarks": "Excellent yield potential and keeping quality Fruits long, slender, compact, fleshy and green in color."
+      }
+    },
+    {
+      "crop_type": "Sponge Gourd",
+      "variety_name": "ANKIT-30",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": "F-1 HYBRID",
+      "characteristics": {
+        "first_picking": "50-55 days after sowing",
+        "fruit_color": "Dark green",
+        "fruit_shape": "Cylindrical",
+        "average_fruit_length": "20-25 cm",
+        "average_fruit_weight": "100-120",
+        "remarks": "High yielding Vigorous hybrid, 20-25 fruits per vine. Medium dark green coloured fruits"
+      }
+    },
+    {
+      "crop_type": "Sponge Gourd",
+      "variety_name": "SUBRHA-35",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": "F-1 HYBRID",
+      "characteristics": {
+        "first_picking": "35-40 days after sowing",
+        "fruit_color": "Pale green",
+        "average_fruit_length": "20-25 cm",
+        "average_fruit_weight": "120-140 g",
+        "remarks": "Good High Yield White Seed Hydrid."
+      }
+    },
+    {
+      "crop_type": "Coriander",
+      "variety_name": "PARIMAL-707",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": "IMPROVED",
+      "characteristics": {
+        "days_to_maturity": "50 days after planting",
+        "season": "Can be planted in Kharif, Rabi and Mild Summer",
+        "remarks": "It has got broad leaves. Nice aroma and is tolerant to bolting. It gives multiple cutting"
+      }
+    },
+    {
+      "crop_type": "Coriander",
+      "variety_name": "PARIMAL-709",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": "IMPORTED",
+      "characteristics": {
+        "days_to_maturity": "50 days after planting",
+        "season": "Can be planted in Kharif, Rabi and Mild Summer",
+        "remarks": "It has got broad leaves. Nice aroma and is tolerant to bolting. It gives multiple cutting"
+      }
+    },
+    {
+      "crop_type": "Snake Gourd",
+      "variety_name": "AWSG-105",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": "F-1 HYBRID",
+      "characteristics": {
+        "plant_vigor": "Vigorous plants with manoecious flowering habit",
+        "first_harvest": "64 days of planting",
+        "fruit_shape": "elongated in shape with ith white shoulder and base",
+        "fruit_color": "white",
+        "fruit_blossom_end": "acute",
+        "average_fruit_dimensions": "85-95 cm length and 5.3 cm diameter",
+        "fruit_weight": "450-650 gms"
+      }
+    },
+    {
+      "crop_type": "Snake Gourd",
+      "variety_name": "AWSG-101",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": "F-1 HYBRID",
+      "characteristics": {
+        "first_picking": "60-65days after sowing",
+        "fruit_color": "Whitish fruit",
+        "fruit_shape": "Thick Short",
+        "fruit_weight": "100-150",
+        "remarks": "vigorous well branched. prolific, high yielding variety"
+      }
+    },
+    {
+      "crop_type": "Cowpea",
+      "variety_name": "AWCP-152",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": "IMPROVED",
+      "characteristics": {
+        "plant_type": "Bushy erect branching plants with dark green leaves",
+        "pod_description": "Long, green pods with 12-14 grains",
+        "seed_description": "Bold and white seeds with black eye color",
+        "remarks": "Early maturity helps for second crop. Tolerant to pod shattering and sucking pest. Suitable for kharif and summer cultivation"
+      }
+    },
+    {
+      "crop_type": "Cowpea",
+      "variety_name": "AWCP-153",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": "IMPROVED",
+      "characteristics": {
+        "remarks": "Early varieties ready in 45 days Green and tender pods Harvest before pods become fibrous Frequent pickings at 2-3 days interval Green pod yield 75-100g/ha"
+      }
+    },
+    {
+      "crop_type": "Cowpea",
+      "variety_name": "VARSHI",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": "IMPROVED",
+      "characteristics": {
+        "plant_type": "Indeterminate plants",
+        "flowering_start": "38-42 days after sowing",
+        "pod_description": "Dark green pods are long (45-50 cm), thin, fleshy",
+        "crop_duration": "90-95 days",
+        "yield": "High",
+        "remarks": "Suitable for rainy and mild winter season"
+      }
+    },
+    {
+      "crop_type": "Lobia",
+      "variety_name": "AWCP-245",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": "IMPROVED",
+      "characteristics": {
+        "plant_type": "Indeterminate plants with twining habit",
+        "flowering_start": "40-45 days after sowing",
+        "pod_description": "Pods are long (55-60 cm), light green, tender, fleshy and sweet in taste",
+        "remarks": "The variety is suitable mainly for rainy season and also for winter where it is mild"
+      }
+    },
+    {
+      "crop_type": "Dolichos Bean",
+      "variety_name": "VASANTA",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": "IMPROVED",
+      "characteristics": {
+        "growth_habit": "Indeterminate",
+        "days_to_maturity": "55-60 days (Green)",
+        "pod_characteristics": "Dark green, flat and fully pods",
+        "crop_duration": "135-150 days",
+        "yield": "High",
+        "remarks": "Photo sensitive"
+      }
+    },
+    {
+      "crop_type": "Greenpeas",
+      "variety_name": "AWGP-10",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": "IMPROVED",
+      "characteristics": {
+        "pods": "Shining dark green pods with 9-11 seed per pod",
+        "harvest_ready": "80-85 days",
+        "yield_potential": "High",
+        "pod_shape": "Curved/Straight",
+        "disease_tolerance": "Powdery Mildew"
+      }
+    },
+    {
+      "crop_type": "Greenpeas",
+      "variety_name": "AWGP-45",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": "IMPROVED",
+      "characteristics": {
+        "pods": "Shining dark green pods with 5-8 seed per pod",
+        "harvest_ready": "65-80 days",
+        "yield_potential": "High",
+        "pod_shape": "Curved/Straight",
+        "disease_tolerance": "Powdery Mildew"
+      }
+    },
+    {
+      "crop_type": "Okra",
+      "variety_name": "SARA",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": "F-1 HYBRID",
+      "characteristics": {
+        "plant_vigor": "Tall vigorous",
+        "branches": "Good branching",
+        "first_picking": "45-48 days",
+        "fruit_color": "Glossy green",
+        "fruit_shape": "Pentagonal",
+        "disease_tolerance": "YVMV",
+        "remarks": "Continuous growth for long crop duration, Attractive glossy green pentagonal fruits and good keeping quality"
+      }
+    },
+    {
+      "crop_type": "Okra",
+      "variety_name": "REVA",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": "F-1 HYBRID",
+      "characteristics": {
+        "plant_vigor": "Tall vigorous",
+        "branches": "Good branching",
+        "first_picking": "45-48 days",
+        "fruit_color": "Dark green",
+        "fruit_shape": "Thick pentagonal long",
+        "fruit_length": "14-15 cms",
+        "disease_tolerance": "YVMV",
+        "remarks": "Continuous growth for long crop duration, dark green thick pentagonal long fruits and Very good average fruit weight"
+      }
+    },
+    {
+      "crop_type": "Okra",
+      "variety_name": "JINNUS",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": "F-1 HYBRID",
+      "characteristics": {
+        "plant_vigor": "Tall vigorous",
+        "branches": "2-4",
+        "first_picking": "45-51 days",
+        "fruit_color": "Dark green",
+        "fruit_weight": "12-15g",
+        "fruit_length": "12-14 cms",
+        "remarks": "Continuous growth for long crop duration, Dark green tender fruits with good shelf life & High tolerance to Okra leaf curl virus & YVMV"
+      }
+    },
+    {
+      "crop_type": "Okra",
+      "variety_name": "JANKI",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": "F-1 HYBRID",
+      "characteristics": {
+        "plant_vigor": "Medium Tall",
+        "branches": "2-3",
+        "first_picking": "45-47 days",
+        "fruit_color": "Dark green",
+        "fruit_weight": "12-14g",
+        "fruit_length": "12-14 cms",
+        "remarks": "Continuous growth for long crop duration, Dark green tender fruits with good shelf life & Migh tolerance to Okra leaf curi virus & YVMV"
+      }
+    },
+    {
+      "crop_type": "Okra",
+      "variety_name": "RAZZO",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": "F-1 HYBRID",
+      "characteristics": {
+        "plant_vigor": "Tall vigorous",
+        "branches": "Good branching",
+        "first_picking": "48-55 days",
+        "fruit_color": "Burgandy Red",
+        "disease_tolerance": "YVMV, ELCV",
+        "remarks": "Continuous growth for long crop duration, Attractive dark burgandy red slim, export quality fruits and good for all season cultivation"
+      }
+    },
+    {
+      "crop_type": "Onion",
+      "variety_name": "N-53",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": null,
+      "characteristics": {
+        "fruit_size": "100-120 gm",
+        "fruit_shape": "Round",
+        "maturity": "100-120 days after transplanting",
+        "storage": "For Fresh Market",
+        "color": "Dark Red",
+        "season": "Kharif",
+        "remarks": "Very high yielding suitable for fresh market"
+      }
+    },
+    {
+      "crop_type": "Onion",
+      "variety_name": "LIGHT RED",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": null,
+      "characteristics": {
+        "fruit_size": "100-120 gm",
+        "fruit_shape": "Round",
+        "maturity": "110-120 days after transplanting",
+        "storage": "5-6 Months",
+        "color": "Light Red",
+        "season": "Kharif",
+        "remarks": "It is a long storage and bolting tolerance"
+      }
+    },
+    {
+      "crop_type": "Onion",
+      "variety_name": "PUNE FURSUNGI",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": null,
+      "characteristics": {
+        "fruit_size": "90-100 gm",
+        "fruit_shape": "globe, uniform bulb",
+        "maturity": "100-120 days after transplanting",
+        "storage": "For Fresh Market",
+        "color": "Pale Red",
+        "season": "Kharif",
+        "remarks": "Very high yielding. Maximum single centers. High pungency. Triple skin. Good for export"
+      }
+    },
+    {
+      "crop_type": "Onion",
+      "variety_name": "BLACK DIAMOND",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": "IMPROVED",
+      "characteristics": {
+        "fruit_size": "100-120 gm",
+        "fruit_shape": "Round",
+        "maturity": "100-120 days after transplanting",
+        "storage": "High keeping quality",
+        "color": "Blackish Red",
+        "season": "Kharif& Rabi",
+        "remarks": "Very high yielding hybrid suitable for keeping stock holding"
+      }
+    },
+    {
+      "crop_type": "Onion",
+      "variety_name": "GULABI",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": "IMPROVED",
+      "characteristics": {
+        "fruit_size": "100-120 gm",
+        "fruit_shape": "Round",
+        "maturity": "100-120 days after transplanting",
+        "storage": "For Fresh Market",
+        "color": "Dark Red",
+        "season": "Kharif",
+        "remarks": "Very high yielding suitable for fresh market"
+      }
+    },
+    {
+      "crop_type": "Pumpkin",
+      "variety_name": "AWPH-730",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": "F-1 HYBRID",
+      "characteristics": {
+        "fruit_shape": "Oblong in shape with dark green colour & white spots",
+        "ideal_fruit_size": "12 to 15 kg",
+        "remarks": "High tolerance to diseases. Very widely adaptable variety and high holding capacity"
+      }
+    },
+    {
+      "crop_type": "Pumpkin",
+      "variety_name": "AWPH-735",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": "F-1 HYBRID",
+      "characteristics": {
+        "fruit_color": "Dark green(immature), golden yellow on ripening",
+        "fruit_shape": "Oblong shape",
+        "fruit_weight": "12-15 kg",
+        "flesh_color": "Orange",
+        "maturity": "80-90 days",
+        "keeping_quality": "6-9 months",
+        "remarks": "High yielder, turn yellow on maturity"
+      }
+    },
+    {
+      "crop_type": "Pumpkin",
+      "variety_name": "AWPH-750",
+      "image": "/agriwork-upper-logo.png",
+      "hybrid_type": "F-1 HYBRID",
+      "characteristics": {
+        "fruit_color": "Mottled green(immature), Creamy orange on ripening",
+        "fruit_shape": "Smooth flat round",
+        "fruit_weight": "4-6 kg",
+        "flesh_color": "Orange",
+        "maturity": "70-80 days",
+        "keeping_quality": "6-9 months",
+        "remarks": "High yielder, turn yellow on maturity"
+      }
+    }
+  ]
+}

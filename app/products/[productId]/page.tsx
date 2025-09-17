@@ -1,25 +1,31 @@
 import ProductDetailPage from "@/components/ProductDetailPage";
+import productData from "@/product-data.json";
 import { notFound } from "next/navigation";
+import { Product } from "@/lib/types";
 
 interface Params {
   productId: string;
 }
 
-// Validate productId before rendering; ProductDetailPage will show content when valid.
 export default async function ProductDetail({ params }: { params: Params }) {
-  // Await params to satisfy Next.js' dynamic params handling
-  const awaitedParams = await params;
-  // Lightweight allowlist must stay in sync with ProductDetailPage's data keys
-  const validIds = [
-    "organic-seeds",
-    "bio-fertilizers",
-    "smart-irrigation-kits",
-    "pest-control-solutions",
-    "greenhouse-equipment",
-    "soil-testing-kits",
-  ];
-  if (!validIds.includes(awaitedParams.productId)) {
-    notFound();
-  }
-  return <ProductDetailPage params={awaitedParams} />;
+  const awaited = await params;
+  const slug = awaited.productId;
+  const products: Product[] =
+    (productData as unknown as { product_info?: Product[] }).product_info || [];
+
+  const slugify = (s: string) =>
+    s
+      .toLowerCase()
+      .replace(/[\s/\\]+/g, "-")
+      .replace(/[^a-z0-9-]+/g, "")
+      .replace(/--+/g, "-")
+      .replace(/^-+|-+$/g, "");
+
+  const product = products.find(
+    (p) => slugify(`${p.crop_type ?? p.name}-${p.variety_name ?? ""}`) === slug
+  );
+
+  if (!product) return notFound();
+
+  return <ProductDetailPage product={product} />;
 }
