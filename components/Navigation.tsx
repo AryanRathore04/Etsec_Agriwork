@@ -25,12 +25,22 @@ export default function Navigation() {
             href="/"
             className="flex items-center space-x-2 text-gray-900 hover:opacity-80 transition-opacity pt-2"
           >
+            {/* Mobile: use PNG logo (agriwork-upper-logo.png) - visible only on small screens */}
+            <Image
+              src="/agriwork-upper-logo.png"
+              alt="AgriWork"
+              width={160}
+              height={40}
+              className="h-8 w-auto object-contain block md:hidden"
+            />
+
+            {/* Desktop: use SVG logo - hidden on small screens */}
             <Image
               src="/Agriwork-svg.svg"
               alt="AgriWork"
               width={300}
               height={90}
-              className="h-8 sm:h-12 md:h-16 lg:h-24 w-auto object-contain"
+              className="hidden md:block h-8 sm:h-12 md:h-16 lg:h-24 w-auto object-contain"
             />
           </Link>
           <div className="hidden md:flex items-center space-x-6 lg:space-x-10">
@@ -56,14 +66,14 @@ export default function Navigation() {
           <div className="md:hidden relative z-[140]">
             <Button
               variant="ghost"
-              size="sm"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-gray-700 hover:text-green-700 relative z-[140]"
+              aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+              className="text-gray-700 hover:text-green-700 relative z-[140] w-12 h-12 p-0 flex items-center justify-center"
             >
               {isMenuOpen ? (
-                <X className="h-6 w-6" />
+                <X className="h-10 w-10" />
               ) : (
-                <Menu className="h-6 w-6" />
+                <Menu className="h-10 w-10" />
               )}
             </Button>
           </div>
@@ -86,7 +96,11 @@ export default function Navigation() {
                 {item.label}
               </Link>
             ))}
-            <Link href="/contact" className="mx-3">
+            <Link
+              href="/contact"
+              className="mx-3"
+              onClick={() => setIsMenuOpen(false)}
+            >
               <InteractiveHoverButton text="Contact Us" className="w-full" />
             </Link>
           </div>

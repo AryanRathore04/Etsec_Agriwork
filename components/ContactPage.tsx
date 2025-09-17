@@ -27,7 +27,7 @@ export default function ContactPage() {
     alert("Thank you for your message! We will get back to you soon.");
   };
   return (
-    <div className="py-12 bg-gradient-to-b from-green-50 to-white">
+    <div className="mt-20 py-12 bg-gradient-to-b from-green-50 to-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl text-gray-900 mb-6">
